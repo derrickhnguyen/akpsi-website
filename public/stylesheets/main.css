@@ -1,0 +1,409 @@
+/* Table of Contents
+------------------------------------------------------------------------------
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer & Icons
+- Media Queries
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+------------------------------ GENERAL CONTENT ---------------------------------
+------------------------------------------------------------------------------*/
+.bottom-space {
+	margin-bottom: 7em;      
+}                             
+
+.top-bot-space {          
+	margin-top: 7em;
+	margin-bottom: 7em;
+}
+
+.top-space {      
+	margin-top: 25px;
+}
+
+.dark-border {
+	border: 1px solid #000000;
+}
+
+.float-right {
+	float: right;
+}
+
+.align-right {
+    text-align: right;
+}
+
+#newsletter {
+    width: 38%;
+    margin: 0 auto;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+--------------------------------- TYPOGRAPHY -----------------------------------
+------------------------------------------------------------------------------*/
+.navbar li a, 
+.navbar .navbar-brand {
+	color: #000000;
+	font-size: 1.2em;
+	padding-top: 25px;
+}
+
+.gold {
+	color: #bfb400;
+}
+
+.blue {
+	color: #00106f;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+q {
+    quotes: '"' '"';
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.merriweather {
+	font-family: 'Merriweather', serif;
+}
+
+.parallax {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+.header {
+	font-size: 4.18em;
+}
+
+.subheader {
+    font-size: 2.5em;
+}
+
+a#backtotop {
+	color: black;
+	text-decoration: none;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+-------------------------- HEADER & NAVIGATION ---------------------------------
+------------------------------------------------------------------------------*/
+
+
+.navbar-default {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #000000;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #000000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #000000;
+}
+
+.navbar-header {
+	padding-left: 14px;
+}
+
+ul.nav {
+	margin-right: 14px;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+------------------------------ IMAGES & MEDIA ----------------------------------
+------------------------------------------------------------------------------*/
+/*Banner images are 2000 x 1200*/
+.img-responsive {
+    margin: 0 auto;
+    margin-top:25px;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+/**CoA in 'About' page**/
+#aboutCoatOfArms {
+    position: relative;
+    bottom: 75px;
+}
+
+/**Hoodie img in 'Recruitment'
+   page**/
+#hoodie {
+    position: relative;
+    bottom: 25px;
+}
+
+#headshot:hover  {
+    opacity: .7;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+----------------------------- FOOTERS & ICONS ----------------------------------
+------------------------------------------------------------------------------*/
+ul.social{
+	display: block;
+	margin: 5% 0;
+	list-style-type: none;
+	text-align: center;
+}
+ul.social li{
+	font-size: 2em;
+	display: inline;
+	padding: 0 2%;
+}
+
+
+ul.social li.facebook a{
+	color: rgb(59, 89, 152);
+}
+
+ul.social li.instagram a{
+	color: rgb(81, 127, 237);
+}
+
+ul.social li.twitter a{
+    color: rgb(29, 202, 255);
+}
+
+.copyright {
+	margin-top: 50px;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+--------------------------------- FADE IN --------------------------------------
+------------------------------------------------------------------------------*/
+body .hideme {
+	opacity: 0;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+-------------------------------- PARALLAX --------------------------------------
+------------------------------------------------------------------------------*/
+.home,
+.recruitment {
+    padding: 300px 0;
+    background:transparent;
+}
+
+.investment,
+.statistics,
+.connect,
+.about,
+.rush {
+    padding: 200px 0;
+    background:transparent;
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+----------------------------- MEDIA QUERIES ------------------------------------
+------------------------------------------------------------------------------*/
+@media only screen and (max-width: 667px) {
+    /**No need for Map in mobile**/
+    .map-responsive {
+        display: none;
+    }
+
+    /**Makes the gap smaller for 
+       mobile-devices**/
+    .top-bot-space {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+    }
+
+    /**Creates more space from the title 
+       in the 'About' page**/
+    #deltaOmicronDescription, 
+    #companyLogo
+     {
+        margin-top: 13px;
+    }
+
+    /**Creates more space so that when 
+       users slowly scrolls down, it doesn't 
+       go right past this quote in the 
+       'Home' page**/
+    #africanStatement {
+        margin-top: 4.5em;
+    }
+
+    /**Found in 'Home' and 'Recruitment' 
+       page**/
+    #activeBrotherStatements,
+    #membership {
+        margin-top: 50px;
+    }
+
+    /**Found in 'About' and 'Brothers' 
+       page**/
+    #aboutAKPsi,
+    #executiveOfficers {
+        margin-top: 2em;
+    }
+
+    /**Found in 'Recruitment' page**/
+    #fall2015Application {
+        margin-top: 3.5em;
+    }
+
+    /**Moves the navbar brand a little 
+       more up**/
+    .navbar-brand {
+        position: relative;
+        bottom: 10px;
+    }
+
+    /**CoA in the 'About' page**/
+    #aboutCoatOfArms {
+        position: initial;
+    }
+
+    /**In the 'About' and 'Recruitment' 
+       page**/
+    #aboutDeltaOmicron,
+    #aboutAKPsi,
+    #membership,
+    #springRushSchedule,
+    #FAQ, {
+        font-size: 1.8em;
+    }
+
+    /**In Home page**/
+    #pastPresentFuture,
+    #ourValues {
+        font-size: 1.7em;
+    }
+
+    #contactThesePeople {
+        font-size: 15px;
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+
+    /**Form**/
+    #newsletter {
+        width: 80%;
+    }
+
+    hr {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 667px) {
+    #mobileHomeSplash,
+    #mobileAboutSplash,
+    #mobileRecruitmentSplash {
+        display:none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #000000;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #000000;
+    background-color: #ffffff;
+    }
+}
+/*------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/

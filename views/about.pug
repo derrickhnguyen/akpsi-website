@@ -1,0 +1,46 @@
+doctype html
+html
+
+	include ./includes/header.pug
+
+	body
+
+		include ./includes/navigation.pug
+
+		div.container-fluid.main
+
+			//Parallax
+			div.container-fluid(class="parallax about")
+				h1.header(class="text-center") LEARN MORE
+				h2.subheader(class="text-center") About the Fraternity and Chapter
+
+			div.container(class="top-bot-space")
+				div.row
+					div.col-md-6
+						h2(class="merriweather gold")#aboutAKPsi About Alpha Kappa Psi Fraternity
+						p In 1904, Alpha Kappa Psi was founded on the principles of educating its members and the public to appreciate and demand higher ideals in business and to further the individual welfare of members during college and beyond.
+						p(class="top-space") College men and women everywhere are discovering that Alpha Kappa Psi is much more than just another organization or club—it is a unique, prestigious association of students, professors, graduates and professionals with common interests and goals. They join Alpha Kappa Psi to take advantage of valuable educational, friendship and networking opportunities.
+					div.col-md-6(class="top-space")
+						img.img-responsive#aboutCoatOfArms(src="/assets/images/coat-of-arms.png")
+				div.row(class="top-space float-right")
+					div.col-md-12
+						h2(class="merriweather blue align-right")#aboutDeltaOmicron About the Delta Omicron Chapter
+				div.row(style="clear:right;")
+					div.col-md-2.col-xs-4#companyLogo
+						img.img-responsive(src="/assets/images/google.png")
+					div.col-md-2.col-xs-4#companyLogo
+						img.img-responsive(src="/assets/images/nasa.png")
+					div.col-md-2.col-xs-4#companyLogo
+						img.img-responsive(src="/assets/images/boeing.png")
+					div.col-md-6.col-xs-12#deltaOmicronDescription
+						p The Delta Omicron Chapter re-chartered in 2012 and has help developed professional and personal growth within each and every brother in the chapter. Our brotherhood has greatly given us the opportunity to expand our connections as well as developed life-long friendship. Our alumnis worked and intern for many companies such as NASA, Raytheon, Boeing, Google, YouTube, and Disneyland.
+				div.row.top-space
+					div.col-md-4.col-xs-6
+						img.img-responsive(class="top-space", src="/assets/images/group-photo-edited.jpg", alt="Eta Banquet")
+					div.col-md-4.col-xs-6
+						img.img-responsive(class="top-space", src="/assets/images/grand-big-little-edited.JPG", alt="grand, Big, Little")
+					div.col-md-4.col-xs-12
+						img.img-responsive(class="top-space", src="/assets/images/big-and-bria-edited.jpg", alt="Gamma Brothers")
+
+			include ./includes/backtotop.pug
+			include ./includes/footer.pug
