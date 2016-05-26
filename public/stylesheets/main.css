@@ -13,6 +13,10 @@
 /*------------------------------------------------------------------------------
 ------------------------------ GENERAL CONTENT ---------------------------------
 ------------------------------------------------------------------------------*/
+.top-space {      
+  margin-top: 25px;
+}
+
 .bottom-space {
 	margin-bottom: 7em;      
 }                             
@@ -20,14 +24,6 @@
 .top-bot-space {          
 	margin-top: 7em;
 	margin-bottom: 7em;
-}
-
-.top-space {      
-	margin-top: 25px;
-}
-
-.dark-border {
-	border: 1px solid #000000;
 }
 
 .float-right {
@@ -87,11 +83,11 @@ body {
     color: white;
 }
 
-.header {
+.font-lg {
 	font-size: 4.18em;
 }
 
-.subheader {
+.font-md {
     font-size: 2.5em;
 }
 
@@ -193,12 +189,6 @@ ul.nav {
     position:absolute;
 }
 
-/**CoA in 'About' page**/
-#aboutCoatOfArms {
-    position: relative;
-    bottom: 75px;
-}
-
 /**Hoodie img in 'Recruitment'
    page**/
 #hoodie {
@@ -269,7 +259,7 @@ body .hideme {
 ------------------------------------------------------------------------------*/
 .home,
 .recruitment {
-    padding: 300px 0;
+    padding: 395px 0;
     background:transparent;
 }
 
@@ -305,9 +295,7 @@ body .hideme {
 
     /**Creates more space from the title 
        in the 'About' page**/
-    #deltaOmicronDescription, 
-    #companyLogo
-     {
+    #deltaOmicronDescription {
         margin-top: 13px;
     }
 
@@ -321,14 +309,12 @@ body .hideme {
 
     /**Found in 'Home' and 'Recruitment' 
        page**/
-    #activeBrotherStatements,
     #membership {
         margin-top: 50px;
     }
 
     /**Found in 'About' and 'Brothers' 
        page**/
-    #aboutAKPsi,
     #executiveOfficers {
         margin-top: 2em;
     }
@@ -345,25 +331,12 @@ body .hideme {
         bottom: 10px;
     }
 
-    /**CoA in the 'About' page**/
-    #aboutCoatOfArms {
-        position: initial;
-    }
-
     /**In the 'About' and 'Recruitment' 
        page**/
-    #aboutDeltaOmicron,
-    #aboutAKPsi,
     #membership,
     #springRushSchedule,
     #FAQ, {
         font-size: 1.8em;
-    }
-
-    /**In Home page**/
-    #pastPresentFuture,
-    #ourValues {
-        font-size: 1.7em;
     }
 
     #contactThesePeople {
@@ -381,14 +354,6 @@ body .hideme {
 
     hr {
         width: 75%;
-    }
-}
-
-@media only screen and (min-width: 667px) {
-    #mobileHomeSplash,
-    #mobileAboutSplash,
-    #mobileRecruitmentSplash {
-        display:none;
     }
 }
 
