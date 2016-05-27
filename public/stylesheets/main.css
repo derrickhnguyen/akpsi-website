@@ -26,6 +26,10 @@
 	margin-bottom: 7em;
 }
 
+.float-left {
+  float: left;
+}
+
 .float-right {
 	float: right;
 }
@@ -34,7 +38,11 @@
     text-align: right;
 }
 
-#newsletter {
+.align-left {
+  text-align: left;
+}
+
+.newsletter {
     width: 38%;
     margin: 0 auto;
 }
@@ -66,21 +74,12 @@
 	color: #FFFFFF;
 }
 
-q {
-    quotes: '"' '"';
-}
-
-body {
-	font-family: 'Montserrat', sans-serif;
-}
-
 .merriweather {
 	font-family: 'Merriweather', serif;
 }
 
 .parallax {
     font-family: 'Raleway', sans-serif;
-    color: white;
 }
 
 .font-lg {
@@ -89,6 +88,14 @@ body {
 
 .font-md {
     font-size: 2.5em;
+}
+
+q {
+    quotes: '"' '"';
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 a#backtotop {
@@ -189,14 +196,7 @@ ul.nav {
     position:absolute;
 }
 
-/**Hoodie img in 'Recruitment'
-   page**/
-#hoodie {
-    position: relative;
-    bottom: 25px;
-}
-
-#headshot:hover  {
+.headshot:hover  {
     opacity: .7;
 }
 /*------------------------------------------------------------------------------
@@ -220,7 +220,6 @@ ul.social li{
 	padding: 0 2%;
 }
 
-
 ul.social li.facebook a{
 	color: rgb(59, 89, 152);
 }
@@ -243,32 +242,15 @@ ul.social li.twitter a{
 
 
 /*------------------------------------------------------------------------------
---------------------------------- FADE IN --------------------------------------
-------------------------------------------------------------------------------*/
-body .hideme {
-	opacity: 0;
-}
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
-
-
-
-/*------------------------------------------------------------------------------
 -------------------------------- PARALLAX --------------------------------------
 ------------------------------------------------------------------------------*/
 .home,
-.recruitment {
-    padding: 395px 0;
-    background:transparent;
-}
-
+.recruitment,
 .investment,
 .statistics,
 .connect,
 .about,
 .rush {
-    padding: 200px 0;
     background:transparent;
 }
 /*------------------------------------------------------------------------------
@@ -280,84 +262,38 @@ body .hideme {
 /*------------------------------------------------------------------------------
 ----------------------------- MEDIA QUERIES ------------------------------------
 ------------------------------------------------------------------------------*/
-@media only screen and (max-width: 667px) {
-    /**No need for Map in mobile**/
+@media only screen and (max-width: 767px) {
+
     .map-responsive {
         display: none;
     }
 
-    /**Makes the gap smaller for 
-       mobile-devices**/
     .top-bot-space {
-        margin-top: 2.5em;
-        margin-bottom: 2.5em;
+        margin-top: 4em;
+        margin-bottom: 4em;
     }
 
-    /**Creates more space from the title 
-       in the 'About' page**/
-    #deltaOmicronDescription {
-        margin-top: 13px;
-    }
-
-    /**Creates more space so that when 
-       users slowly scrolls down, it doesn't 
-       go right past this quote in the 
-       'Home' page**/
-    #africanStatement {
-        margin-top: 4.5em;
-    }
-
-    /**Found in 'Home' and 'Recruitment' 
-       page**/
-    #membership {
-        margin-top: 50px;
-    }
-
-    /**Found in 'About' and 'Brothers' 
-       page**/
-    #executiveOfficers {
-        margin-top: 2em;
-    }
-
-    /**Found in 'Recruitment' page**/
-    #fall2015Application {
-        margin-top: 3.5em;
-    }
-
-    /**Moves the navbar brand a little 
-       more up**/
     .navbar-brand {
         position: relative;
         bottom: 10px;
-    }
-
-    /**In the 'About' and 'Recruitment' 
-       page**/
-    #membership,
-    #springRushSchedule,
-    #FAQ, {
-        font-size: 1.8em;
-    }
-
-    #contactThesePeople {
-        font-size: 15px;
     }
 
     .footer {
         font-size: 8px;
     }
 
-    /**Form**/
-    #newsletter {
-        width: 80%;
+    .newsletter {
+        width: 70%;
     }
 
     hr {
         width: 75%;
     }
+
 }
 
 @media (max-width: 767px) {
+
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #000000;
     }
@@ -368,6 +304,7 @@ body .hideme {
     color: #000000;
     background-color: #ffffff;
     }
+
 }
 /*------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
