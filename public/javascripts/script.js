@@ -79,7 +79,7 @@ function mobileParallax() {
 $(document).ready(function() {
 
 	//Enables NiceScroll
-    $("html").niceScroll({cursorwidth:8});
+	$("html").niceScroll({cursorwidth:8});
 
 	// Change color of parallax text to white.
 	$( '.parallax' ).css('color', 'white');
