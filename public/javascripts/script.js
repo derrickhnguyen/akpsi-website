@@ -18,13 +18,13 @@ function fadeIns() {
 //Sets the background images for the parallaxes as well as the parallax effect
 function parallaxGenerator() {
 
-   	$('.home').parallax({imageSrc: '/assets/images/banners/cityview.jpg'});
-   	$('.investment').parallax({imageSrc: '/assets/images/banners/invest.jpg'});
-   	$('.statistics').parallax({imageSrc: '/assets/images/banners/guyoncomputer.jpg'});
-   	$('.connect').parallax({imageSrc: '/assets/images/banners/people-writing.jpg'});
-   	$('.about').parallax({imageSrc: '/assets/images/banners/businessman.jpg'});
-   	$('.recruitment').parallax({imageSrc: '/assets/images/banners/city-skyline.jpg'});
-   	$('.rush').parallax({imageSrc: '/assets/images/banners/rush.jpg'});
+   	$('.home').parallax({imageSrc:'/assets/images/banners/cityview.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$('.investment').parallax({imageSrc:'/assets/images/banners/invest.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$('.statistics').parallax({imageSrc:'/assets/images/banners/guyoncomputer.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$('.connect').parallax({imageSrc:'/assets/images/banners/people-writing.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10'});
+   	$('.about').parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$('.recruitment').parallax({imageSrc:'/assets/images/banners/city-skyline.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$('.rush').parallax({imageSrc:'/assets/images/banners/rush.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
 
 }
 
@@ -50,10 +50,8 @@ function newsletterEffect() {
 
 //Resizes parallax's padding depending on size of screen.
 function desktopParallax() {
-	$( '.home' ).css('padding', '395px 0');
 	$( '.recruitment' ).css('padding', '395px 0');
 	$( '.about' ).css('padding', '200px 0');		
-
 
 	$( '.investment' ).css('padding', '200px 0');
 	$( '.statistics' ).css('padding', '200px 0');
@@ -64,10 +62,8 @@ function desktopParallax() {
 
 //Resizes parallax's padding depending on size of screen.
 function mobileParallax() {
-	$( '.home' ).css('padding', '150px 10px');
 	$( '.recruitment' ).css('padding', '150px 10px');
 	$( '.about' ).css('padding', '150px 10px');		
-
 
 	$( '.investment' ).css('padding', '75px 10px');
 	$( '.statistics' ).css('padding', '20px 10px');
@@ -76,10 +72,24 @@ function mobileParallax() {
 	$( '.rush' ).css('padding', '75px 10px');	
 }
 
+function coverHomeParallax() {
+	var foo = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
+	$( '.home' ).css('padding-top', foo + 'px');
+	$( '.home' ).css('padding-bottom', foo + 'px');
+}
+
+function coverHomeParallaxMobile() {
+	var foo = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
+	$( '.home' ).css('padding-top', (foo - 100) + 'px');
+	$( '.home' ).css('padding-bottom', (foo) + 'px');
+}
+
 $(document).ready(function() {
 
+	$( 'nav' ).css('display', 'none');
+	
 	//Enables NiceScroll
-	$("html").niceScroll({cursorwidth:8});
+	$("html").niceScroll({cursorwidth:'8'});
 
 	// Change color of parallax text to white.
 	$( '.parallax' ).css('color', 'white');
@@ -109,10 +119,11 @@ $(document).ready(function() {
 	if( $( window ).width() <= 767 ) {
 
 		$( '.hideme' ).css('opacity', '1');
+		coverHomeParallaxMobile();
 		mobileParallax();
 
 	} else if( $( window ).width() > 767) {
-
+		coverHomeParallax();
 		desktopParallax();
 		$( '.hideme' ).css('opacity', '0');
 		fadeIns();
@@ -136,6 +147,7 @@ $(document).ready(function() {
 
 // When window size changes, will call one of the
 // parallax function depending on the size.
+/**
 $( window ).resize(function() {
 
 	if( $( window ).width() <= 767 ) {
@@ -144,4 +156,18 @@ $( window ).resize(function() {
 
 	} else desktopParallax();
 
+});
+**/
+
+$( window ).resize(function() {
+
+	
+	if( $( window ).width() <= 767 ) {
+		coverHomeParallaxMobile();
+		mobileParallax();
+	} else if( $( window ).width() > 767 ) {
+		coverHomeParallax();
+		desktopParallax();
+	} 
+	
 });
