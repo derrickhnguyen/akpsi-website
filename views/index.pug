@@ -10,12 +10,16 @@ html
 		div.container-fluid.main
 
 			// First Parallax
-			div.container-fluid(class="parallax raleway text-center home")
-				h1.font-lg.test ALPHA KAPPA PSI
-				h2.test1 The World's Largest &amp; Oldest Co-Ed Professional Business Fraternity Since 1904
+			div.container-fluid(class="parallax open-sans text-center home")
+				h1.header(class="font-lg")
+					strong ALPHA KAPPA PSI
+				h2.subheader(Class="font-md")
+					strong Shaping People, Shaping Business
 
+		include ./includes/scripts.pug
 
-			div.row(class="top-bot-space text-center")
+		
+		//	div.row(class="top-bot-space text-center")
 				div.col-md-12
 					h3.hideme
 						strong AN EXPERIENCE &amp; A JOUNEY
@@ -25,9 +29,11 @@ html
 
 
 			// Second Parallax
-			div.container-fluid(class="parallax raleway text-center investment")
-				h1.font-lg INVEST IN YOUR SELF
-				h2 Alpha Kappa Psi is recognized as the premier developer of principled business leaders
+			div.container-fluid(class="parallax open-sans text-center investment")
+				h1(class="font-lg") 
+					strong INVEST IN YOUR SELF
+				h2 
+					strong Alpha Kappa Psi is recognized as the premier developer of principled business leaders
 
 
 			// VALUES
@@ -64,9 +70,11 @@ html
 
 
 			//Third Parallax
-			div.container-fluid(class="parallax raleway text-center statistics")
-				h1.font-lg 2015 FRATERNITY STATISTICS
-				h2.font-md Did you know that we have...
+			div.container-fluid(class="parallax open-sans text-center statistics")
+				h1(class="font-lg") 
+					strong 2015 FRATERNITY STATISTICS
+				h2(class="font-md") 
+					strong Did you know that we have...
 				br
 				h3 233 ACTIVE CHAPTERS?
 					br
@@ -147,8 +155,9 @@ html
 
 
 			// Fourth Parallax
-			div.container-fluid(class="parallax raleway connect")
-				h1.header(class="text-center") Connect with us!
+			div.container-fluid(class="parallax open-sans connect")
+				h1(class="text-center font-lg") 
+					strong Connect with us!
 				div.row
 					div.col-md-12
 						ul.fa-ul.social
