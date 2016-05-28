@@ -1,3 +1,13 @@
+var $homeParallax = $('.home');
+var $investmentParallax = $('.investment');
+var $statisticsParallax = $('.statistics');
+var $connectParallax = $('.connect');
+var $aboutParallax = $('.about');
+var $recruitmentParallax = $('.recruitment');
+var $rushParallax = $('.rush');
+var $nav = $('nav');
+var $subnav = $( 'nav.navbar div.container-fluid div' ).eq(1)
+
 
 // When users scrolls down, the elements that have the class 'hideme,'
 // will visibly appear if they are initially set to invisible.
@@ -15,16 +25,25 @@ function fadeIns() {
 
 }
 
+// Fades in navigation bar
+function fadeInNav() {
+
+	$(window).scroll(function() {
+		$nav.fadeIn(300);
+	});
+
+}
+
 //Sets the background images for the parallaxes as well as the parallax effect
 function parallaxGenerator() {
 
-   	$('.home').parallax({imageSrc:'/assets/images/banners/cityview.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
-   	$('.investment').parallax({imageSrc:'/assets/images/banners/invest.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
-   	$('.statistics').parallax({imageSrc:'/assets/images/banners/guyoncomputer.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
-   	$('.connect').parallax({imageSrc:'/assets/images/banners/people-writing.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10'});
-   	$('.about').parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
-   	$('.recruitment').parallax({imageSrc:'/assets/images/banners/city-skyline.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
-   	$('.rush').parallax({imageSrc:'/assets/images/banners/rush.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$homeParallax.parallax({imageSrc:'/assets/images/banners/cityview.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$investmentParallax.parallax({imageSrc:'/assets/images/banners/invest.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$statisticsParallax.parallax({imageSrc:'/assets/images/banners/guyoncomputer.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$connectParallax.parallax({imageSrc:'/assets/images/banners/people-writing.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10'});
+   	$aboutParallax.parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$recruitmentParallax.parallax({imageSrc:'/assets/images/banners/city-skyline.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$rushParallax.parallax({imageSrc:'/assets/images/banners/rush.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
 
 }
 
@@ -50,44 +69,51 @@ function newsletterEffect() {
 
 //Resizes parallax's padding depending on size of screen.
 function desktopParallax() {
-	$( '.recruitment' ).css('padding', '395px 0');
-	$( '.about' ).css('padding', '200px 0');		
-
-	$( '.investment' ).css('padding', '200px 0');
-	$( '.statistics' ).css('padding', '200px 0');
-	$( '.connect' ).css('padding', '200px 0');
-
-	$( '.rush' ).css('padding', '200px 0');
+	$recruitmentParallax.css('padding', '395px 0');
+	$aboutParallax.css('padding', '200px 0');		
+	$investmentParallax.css('padding', '200px 0');
+	$statisticsParallax.css('padding', '200px 0');
+	$connectParallax.css('padding', '200px 0');
+	$rushParallax.css('padding', '200px 0');
 }
 
 //Resizes parallax's padding depending on size of screen.
 function mobileParallax() {
-	$( '.recruitment' ).css('padding', '150px 10px');
-	$( '.about' ).css('padding', '150px 10px');		
-
-	$( '.investment' ).css('padding', '75px 10px');
-	$( '.statistics' ).css('padding', '20px 10px');
-	$( '.connect' ).css('padding', '20px 0');
-
-	$( '.rush' ).css('padding', '75px 10px');	
+	$recruitmentParallax.css('padding', '150px 10px');
+	$aboutParallax.css('padding', '150px 10px');		
+	$investmentParallax.css('padding', '75px 10px');
+	$statisticsParallax.css('padding', '20px 10px');
+	$connectParallax.css('padding', '20px 0');
+	$rushParallax.css('padding', '75px 10px');	
 }
 
+// fills the home parallax's image to entire screen 
 function coverHomeParallax() {
-	var foo = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
-	$( '.home' ).css('padding-top', foo + 'px');
-	$( '.home' ).css('padding-bottom', foo + 'px');
+	var padding = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
+	$homeParallax.css('padding-top', padding + 'px');
+	$homeParallax.css('padding-bottom', padding + 'px');
 }
 
+// Fills the home parallax's image to entire screen of mobile device
 function coverHomeParallaxMobile() {
-	var foo = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
-	$( '.home' ).css('padding-top', (foo - 100) + 'px');
-	$( '.home' ).css('padding-bottom', (foo) + 'px');
+	var padding = parseFloat( $( window ).height() ) / 2 - ( ( parseFloat( $( '.test' ).css('font-size') ) ) + ( parseFloat( $('.test1').css('font-size') ) ) );
+	$homeParallax.css('padding-top', (padding - 100) + 'px');
+	$homeParallax.css('padding-bottom', (padding) + 'px');
 }
 
 $(document).ready(function() {
 
-	$( 'nav' ).css('display', 'none');
-	
+	var url = window.location.pathname;
+
+	if(url === "/") {
+		$( 'nav' ).css('display', 'none');
+		$homeParallax.css('display', 'none');
+
+		fadeInNav();
+		$homeParallax.fadeIn(1000);
+
+	}
+
 	//Enables NiceScroll
 	$("html").niceScroll({cursorwidth:'8'});
 
@@ -100,12 +126,9 @@ $(document).ready(function() {
 	// Adds the necessary classes to allow the navigation
 	// bar to collapse when users visit the website on a
 	// mobile device.
-	$( 'nav.navbar div.container-fluid div' ).eq(1)
-		.addClass('collapse');
-	$( 'nav.navbar div.container-fluid div' ).eq(1)
-		.addClass('navbar-collapse');
-	$( 'nav.navbar div.container-fluid div' ).eq(1)
-		.attr('id', 'nav');
+	$subnav.addClass('collapse');
+	$subnav.addClass('navbar-collapse');
+	$subnav.attr('id', 'nav');
 
 	// When in mobile-view, all elements with class 'hideme'
 	// will be set to visible and the padding-size of 
@@ -119,12 +142,13 @@ $(document).ready(function() {
 	if( $( window ).width() <= 767 ) {
 
 		$( '.hideme' ).css('opacity', '1');
-		coverHomeParallaxMobile();
 		mobileParallax();
+		coverHomeParallaxMobile();
 
 	} else if( $( window ).width() > 767) {
-		coverHomeParallax();
+
 		desktopParallax();
+		coverHomeParallax();
 		$( '.hideme' ).css('opacity', '0');
 		fadeIns();
 
@@ -145,29 +169,14 @@ $(document).ready(function() {
 
 }());
 
-// When window size changes, will call one of the
-// parallax function depending on the size.
-/**
 $( window ).resize(function() {
 
 	if( $( window ).width() <= 767 ) {
-
 		mobileParallax();
-
-	} else desktopParallax();
-
-});
-**/
-
-$( window ).resize(function() {
-
-	
-	if( $( window ).width() <= 767 ) {
 		coverHomeParallaxMobile();
-		mobileParallax();
 	} else if( $( window ).width() > 767 ) {
-		coverHomeParallax();
 		desktopParallax();
+		coverHomeParallax();
 	} 
 	
 });
