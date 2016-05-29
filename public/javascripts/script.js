@@ -118,7 +118,6 @@ $(document).ready(function() {
 	if(url === "/") {
 		$nav.css('display', 'none');
 		$nav.fadeIn(1000);
-		$homeParallax.css('opacity', 0);
 		coverParallax();
 	} else if(url === "/recruitment") coverParallax();
 
