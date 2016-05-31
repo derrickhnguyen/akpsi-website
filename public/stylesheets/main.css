@@ -74,10 +74,6 @@
 	color: #FFFFFF;
 }
 
-.merriweather {
-	font-family: 'Merriweather', serif;
-}
-
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
@@ -92,6 +88,14 @@
 
 .font-md {
     font-size: 2.5em;
+}
+
+.header {
+  font-size: 5em;
+}
+
+.subheader {
+  font-size: 3.5em;
 }
 
 q {

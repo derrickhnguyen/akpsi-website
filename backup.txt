@@ -1,0 +1,339 @@
+
+// When users scrolls down, the elements that have the class 'hideme,'
+// will visibly appear if they are initially set to invisible.
+function fadeIns() {
+
+	$(window).scroll( function(){
+
+		$('hidden').each( function(i){            
+			var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+			var bottom_of_window = $(window).scrollTop() + $(window).height();            
+			if( bottom_of_window > bottom_of_object ){                
+			    $(this).animate({'opacity':'1'},500);                    
+			}           
+		});   
+		
+	}); 
+
+}
+
+
+
+//Sets the background images for the parallaxes as well as the parallax effect
+function parallaxGenerator() {
+
+   	$homeParallax.parallax({imageSrc:'/assets/images/banners/home.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$investmentParallax.parallax({imageSrc:'/assets/images/banners/invest.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$statisticsParallax.parallax({imageSrc:'/assets/images/banners/guyoncomputer.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$connectParallax.parallax({imageSrc:'/assets/images/banners/people-writing.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'fa;se'});
+   	$aboutParallax.parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$recruitmentParallax.parallax({imageSrc:'/assets/images/banners/recruitment.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$rushParallax.parallax({imageSrc:'/assets/images/banners/rush.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+
+}
+
+
+
+// When users click inside the textbox, the default message will
+// dissappear, when users click out of the textbox with no
+// message, the default message will re-appear.
+function newsletterEffect() {
+
+	var emailField = document.getElementById("newsletter");
+
+	emailField.onfocus = function() {
+		if (emailField.value == "Enter your email here") {
+			emailField.value = "";
+		}
+	};
+	emailField.onblur = function() {
+		if (emailField.value == "") {
+			emailField.value = "Enter your email here";
+		}
+	};
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+		//	div.row(class="top-bot-space text-center")
+				div.col-md-12
+					h3.hideme
+						strong AN EXPERIENCE &amp; A JOUNEY
+					h4.hideme "If you want to go fast, go alone. If you want to go far, go together."
+					h4.hideme
+						i &mdash; African Proverb
+
+
+			// Second Parallax
+			div.container-fluid(class="parallax open-sans text-center investment")
+				h1(class="font-lg") 
+					strong INVEST IN YOUR SELF
+				h2 
+					strong Alpha Kappa Psi is recognized as the premier developer of principled business leaders
+
+
+			// VALUES
+			div.container(class="top-bot-space text-center")
+				div.row
+					div.col.xs-12.col-md-12
+						h2(class="font-md gold raleway hideme")
+							b Our Values
+						
+				div.row
+					div.col-xs-12.col-md-4
+						img.hideme.img-responsive(src="/assets/images/brotherhood-icon.gif", alt="Brotherhood Icon")
+						h4.hideme(class="gold") BROTHERHOOD
+						p.hideme Our brotherhood is the backbone of the fraternity. Brotherhood is that common bond we share with not only our chapter brothers but also our brothers from all over the globe. Trust, respect, cooperation, companionship and aid to brothers is the expected norm
+					div.col-xs-12.col-md-4
+						img.hideme.img-responsive(src="/assets/images/professional-icon.gif", alt="Professional Icon")
+						h4.hideme(class="gold") PROFESSIONAL DEVELOPMENT
+						p.hideme When you join Alpha Kappa Psi, you join an elite group of professionals who are committed to keeping their skills sharp and careers on track. Members gain many valuable skills on the local level as they operate their chapters as "franchises” of Alpha Kappa Psi. Such professional development, when marketed to employers, will set you apart from your peers.
+					div.col-xs-12.col-md-4
+						img.hideme.img-responsive(src="/assets/images/leadership-icon.gif", alt="Leadership Icon")
+						h4.hideme(class="gold") LEADERSHIP
+						p.hideme Alpha Kappa Psi provides many programs such as the College of Leadership Program that provides students and alumni with advanced chapter management and person development skills. These programs are designed to be interactive discussions to give attendees the opportunities to learn and share ideas from business professionals, AKPsi leaders and chapters from across the Fraternity.
+
+				div.row
+					div.col-xs-12.col-md-4.col-md-offset-2
+						img.hideme.img-responsive(src="/assets/images/knowledge-icon.gif", alt="Knowledge Icon")
+						h4.hideme(class="gold") KNOWLEDGE
+						p.hideme Through professional development, educational programs, community service and a hands-on application of formal education, Alpha Kappa Psi  students use the business skills they are taught in the classroom to acquire life skills such as the art of compromise, consensus building, project management, team building and networking that will build leadership skills.
+					div.col-xs-12.col-md-4
+						img.hideme.img-responsive(src="/assets/images/service-icon.gif", alt="Service Icon")
+						h4.hideme(class="gold") SERVICE
+						p.hideme Alpha Kappa Psi encourages each member to improve his or her campus and community. This, combined with chapter philanthropy and service projects, result in a level of service unmatched by other college organizations. Thousands of hours and dollars are contributed to worthy charities by Alpha Kappa Psi chapters each year—now that’s making a difference!
+
+
+
+			//Third Parallax
+			div.container-fluid(class="parallax open-sans text-center statistics")
+				h1(class="font-lg") 
+					strong 2015 FRATERNITY STATISTICS
+				h2(class="font-md") 
+					strong Did you know that we have...
+				br
+				h3 233 ACTIVE CHAPTERS?
+					br
+					br
+					|	OVER 50 ALUMNI CHAPTERS?
+					br
+					br
+					| MORE THAN 240,000 MEMBERS?
+					br
+					br
+					| EST. ON 300+ CAMPUSES WORLDWIDE
+
+
+			// STATEMENTS
+			div.container(class="top-bot-space text-center")
+				div.row
+					div.col-md-12.col-xs-12
+						h2.hideme(class="font-md gold raleway")
+							b  Past, Present, Future
+				div.row
+					div.col-md-4.col-xs-6
+						img.hideme.img-responsive(class="top-space", src="/assets/images/alumni-2015.jpg", alt="Class of 2015")
+					div.col-md-4.col-xs-6
+						img.hideme.img-responsive(class="top-space", src="/assets/images/akpsi-brothers.jpg", alt="Brothers of AKPsi")
+					div.col-md-4.col-xs-12
+						//Changed jpg to JPG in this photo
+						img.hideme.img-responsive(class="top-space", src="/assets/images/rush-2015.JPG", alt="Fall Rush 2015")
+
+				div.row
+					div.col-md-6.col-xs-12(class="top-space")
+						h4.hideme(class="blue") ALUMNI MEMBER STATEMENTS
+						p.hideme(class="align-left")
+							q
+								i I was looking for an organization that had the "Whole-shabang." I happened to find that with Alpha Kappa Psi. It offered everything from service, social, cultural diversity, and professionalism (an aspect that many other fraternities and sororities didn't have). AKPsi has taught me many things, including the core values that will shape me into a principled business leader. If you want to be surrounded by a group of driven individuals, who will push you to excel above your limits, look no further; its AKPsi.
+							br
+							span(class="float-right")
+								i
+									strong &ndash; Jason Truong
+						br
+						br
+						p.hideme(class="align-left")
+							q
+								i As an active member, I was able to practice what I learned in the classroom. Being historian helped me learn and grow as an artist. I was in a fail-safe learning environment that provided me the tools to succeed once I completed my education. The single most important thing I gained from being in Alpha Kappa Psi was a group of individuals who pushed me to better myself as a person. They helped build my confidence and believed in me as an artist. They believed in me when I felt incompetent. They were overfilled with joy when something marvelous happened. Some even stayed in an art room with me 'til 4 in the morning while I finished up a project. They are my brothers and they always will be.
+							br
+							span(class="float-right")
+								i
+									strong &ndash; Kathy Ramirez
+					div.col-md-6.col-xs-12(class="top-space")
+						h4.hideme(class="blue") ACTIVE BROTHER STATEMENTS
+						p.hideme(class="align-right")
+							q
+								i With only a semester in Alpha Kappa Psi, I was already able to land my first internship in the A/V industry as a sophomore. The Fraternity help me gain confidence in myself to speak comfortably among big crowds as well as intimate ones for in-person interviews. Alpha Kappa Psi is my safe net zone where I am able to learn and grow professionally and personally.
+							br
+							span(class="float-right")
+								i
+									strong &ndash; Derrick Nguyen
+						br
+						br
+						p.hideme(class="align-right")
+							q
+								i Alpha Kappa Psi has shown me how important it is to be able to compromise and collaborate with a diverse group of individuals. Everyone is different and being able to adapt according to specific people improved my communication skills. In addition, it helped me develop professional skills that helped me with my resume, time management abilities and presentation skills. But more than that, this fraternity has given me friendships that I know will extend beyond the chapter and last for years to come.
+							br
+							span(class="float-right")
+								i
+									strong &ndash; Michelle Ha
+
+				div.row(class="top-space")
+					div.col-md-12
+						h4.hideme(class="blue") WHO'S THE FUTURE?
+						h3.hideme(class="gold font-lg") YOU ARE
+						h4.hideme(class="blue")
+							i BECOME APART OF THE WORLD'S LARGEST CO-ED PROFESSIONAL BUSINESS FRATERNITY TODAY!
+				div.row.hideme
+					div.col-md-12
+						a.btn.btn-default.btn-lg(class="top-space raleway", href="recruitment.html", role="button" style="border:1px solid #000000;") 
+							b RECRUITMENT
+
+
+
+			// Fourth Parallax
+			div.container-fluid(class="parallax open-sans connect")
+				h1(class="text-center font-lg") 
+					strong Connect with us!
+				div.row
+					div.col-md-12
+						ul.fa-ul.social
+							li.facebook
+								a(href="https://www.facebook.com/csulb.akpsi/?fref=ts", target="_blank")
+									img(src="/assets/images/facebook-icon.png" alt="Facebook Icon")
+							li.twitter
+								a(href="https://twitter.com/CSULBAKPsi", target="_blank")
+									img(src="/assets/images/twitter-icon.png", alt="Twitter Icon")
+							li.instagram
+								a(href="https://www.instagram.com/csulbakpsi/", target="_blank")
+									img(src="/assets/images/instagram-icon.png", alt="Instagram Icon")
+
+			include ./includes/backtotop.pug
+			include ./includes/footer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					//
+						p(class="top-space") Curious about recruitment? Want to see what we are working on? Follow us on our various social media channels.
+						ul.fa-ul.social
+							li.facebook
+								a(href="https://www.facebook.com/csulb.akpsi/?fref=ts", target="_blank")
+									i.fa.fa-facebook-square.fa-2x
+							li.twitter
+								a(href="https://twitter.com/CSULBAKPsi", target="_blank")
+									i.fa.fa-twitter.fa-2x
+							li.instagram
+								a(href="https://www.instagram.com/csulbakpsi/", target="_blank")
+									i.fa.fa-instagram.fa-2x
+						h4 We look forward to meeting you at our next event!
+		//
+			//Second Parallax
+			div.container-fluid(class="parallax open-sans rush align-right")
+				div.container
+					h1(class="font-lg") 
+						b What is Rush?
+					p 
+						b Rush week, more officially known as recruitment week, is the period of time when fraternities and sororities recruit students to their respective Greek organizations. Rush week usually happens during the beginning of the semester. During rush, fraternities and sororities have slightly different practices, but they all involve students getting to know more about Greek life. Fraternities then give “bids,” - invitations to join the fraternity - to students they want as pledges. Students can then pledge to join and go through an initiation process to become a full member or they can refuse the bid.
+
+			div.container(class="top-bot-space text-center")
+				div.row
+					div.col-md-6
+						img.img-responsive(class="img-circle" src="/assets/images/akpsi-hoodie.jpg")
+					div.col-md-6
+						h2(class="gold raleway float-right align-right font-md")
+							b Membership
+						p(class="top-space", style="clear:right;") As a member of Alpha Kappa Psi, you will become a better, more focused candidate for jobs and networking opportunities. There are many chances where you can to learn and grow professional and personally as well as find a group of people you can call your brothers for the rest of your life.
+
+			div.row(class="top-bot-space")
+				div.col-md-12
+					img.img-responsive(src="/assets/images/csulb-map.jpg", alt="CSULB Map", title="CSULB Map")
+
+			div.container(class="top-bot-space")
+				div.row(class="text-center")
+					div.col-md-12
+						h2(class="gold raleway font-md") 
+							b Rush Frequently Asked Questions
+							br
+							span(style="font-size:12px;") 
+								b (From UC Davis' Chapter)
+				div.row
+					div.col-md-12(class="top-space")
+						h4.blue Q: What is rush?
+						p Rush is a series of events over a week to allow potential rushees the opportunity to learn more about Alpha Kappa Psi while in turn allowing the Active Brothers to learn more about interested candidates.
+					div.col-md-12(class="top-space")
+						h4.blue Q: What is Alpha Kappa Psi?
+						p One of two professional business fraternities on campus, Alpha Kappa Psi offers much more than professional development and social networking. The Active Brothers of Alpha Kappa Psi are successful students motivated to achieve even greater accomplishments, in and out of the work place. Alumni Brothers lead interesting and rewarding careers. Alpha Kappa Psi also appreciates the contributions by every major toward business, proved by our open-major rush. We invite you to learn more about the fraternity at our upcoming rush events.
+					div.col-md-12(class="top-space")
+						h4.blue Q: Do I have to be a business-oriented major to apply?
+						p Absolutely not. Alpha Kappa Psi recognizes the universal nature of business. Professionalism is required of all industries. Alpha Kappa Psi is open to all majors.
+					div.col-md-12(class="top-space")
+						h4.blue Q: How is Alpha Kappa Psi different from other business fraternities?
+						p Alpha Kappa Psi offers a wide range of opportunities, allowing our Active Brothers to excel where they choose. Because Alpha Kappa Psi is open to all majors, the breadth of knowledge gained and shared by the Active Brothers and Alumni Brothers allow us to offer innovative perspectives on business and beyond.
+					div.col-md-12(class="top-space")
+						h4.blue Q: Is attending all the rush events required?
+						p Although attendance to rush events is voluntary, it is highly encouraged that serious applicants attend all rush events. Due to the high traffic of our rush, it is difficult to remember every rush candidate. The more interactions an individual has with our fraternity, the more he or she can learn about Alpha Kappa Psi and the more we can learn about him or her.
+					div.col-md-12(class="top-space")
+						h4.blue Q: What type of rush candidates are you looking for?
+						p There is no pre-set image of the ideal rush candidate as we recognize the different contributions that various individuals can make. However, we are still looking for highly motivated scholars that not only work well independently, but within a group as well. Potential, as well as present qualities, is a determining factor in the bid process.
+					div.col-md-12(class="top-space")
+						h4.blue Q: If I do not get a bid the first time, can I rush again?
+						p It is highly encouraged that a rush candidate apply again if he or she did not receive a bid the first time. Determination and personal refinement are valued traits in rush candidates.
+
+				div.row(class="text-center top-space")
+					div.col-md-12
+						h4(class="blue") HAVE ANY QUESTIONS THAT AREN'T ANSWERED HERE?
+							br
+							|	PLEASE CONTACT THE FOLLOWING INDIVIDUALS FOR MORE INFORMATION OR ANY INQUIREIES.
+
+				div.row(class="text-center top-space")
+					div.col-md-4.col-md-offset-2
+						h4 Vice President of Membership
+							br
+							|	Darrin Nguyen
+							br
+							|	+1-714-653-5757
+							br
+							|	membership.csulb.akpsi@gmail.com
+					div.col-md-4
+						h4 Director of Marketing
+							br
+							|	Vivian To
+							br
+							|	+1-323-303-0109
+							br
+							|	csulb.akpsi@gmail.com
+
+			include ./includes/backtotop.pug
+			include ./includes/footer.pug
