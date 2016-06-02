@@ -9,25 +9,22 @@ html
 
 		div.container-fluid.main
 
-			//First Parallax
 			div.container-fluid(class="parallax open-sans recruitment")
 				div.row(class="text-center")
 						div.col-md-12
 							h1.header 
 								b Fall 2016 Rush Week Coming Soon!
-		
-		
 
 			div.container(class="top-bot-space text-center")
 				div.row
 					div.col-md-12
 						p
-							strong The application for Spring 2016 Recruitment is now closed. Applications for Fall 2016 Recruitment are coming soon
+							strong Applications for Fall 2016 Recruitment are coming soon
 						p(class="top-space")
 							i Sign up for our mailing list! We'll keep you updated!
-						form(method="POST", action="/users/newsletter-validation", role="form")
+						form(method="POST", action="/recruitment", role="form")
 							div.form-group
-								input.form-control(class="newsletter", type="email", name="email", placeholder="Enter your email here")
+								input.form-control(class="newsletter", type="email", name="email", autocomplete="off" placeholder="Enter your email here")
 							button.btn.btn-default(type="submit") Submit
 
 
