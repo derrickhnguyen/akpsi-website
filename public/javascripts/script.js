@@ -3,15 +3,13 @@ var $homeParallax = $('.home');
 var $homeParallaxHeader = $('.home h1');
 var $homeParallaxSubheader = $('.home h2');
 
-var $investmentParallax = $('.investment');
-var $statisticsParallax = $('.statistics');
-var $connectParallax = $('.connect');
 var $aboutParallax = $('.about');
+
+var $brothersParallax = $('.brothers');
+var $brothersParallaxHeader = $('.brothers h1');
 
 var $recruitmentParallax = $('.recruitment');
 var $recruitmentParallaxHeader = $('.recruitment h1');
-
-var $rushParallax = $('.rush');
 
 var $nav = $('nav');
 var $subnav = $( 'nav.navbar div.container-fluid div' ).eq(1)
@@ -20,6 +18,7 @@ var $subnav = $( 'nav.navbar div.container-fluid div' ).eq(1)
 function parallaxGenerator() {
    	$homeParallax.parallax({imageSrc:'/assets/images/banners/home.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
    	$aboutParallax.parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
+   	$brothersParallax.parallax({imageSrc:'/assets/images/banners/brothers.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
    	$recruitmentParallax.parallax({imageSrc:'/assets/images/banners/recruitment.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
 }
 
@@ -36,7 +35,6 @@ function mobileParallax() {
 // fills the home parallax's image to entire screen 
 function coverParallax() {
 	var padding;
-
 	if(window.location.pathname === '/') {
 		if( $( window ).width() <= 767 ) {
 			$homeParallaxHeader.removeClass('header');
@@ -50,7 +48,9 @@ function coverParallax() {
 			$homeParallax.css('padding-bottom', padding - ( $nav.height() ) + 'px');
 		}
 		$homeParallax.css('padding-top', padding + 'px');
-	} else if(window.location.pathname === '/recruitment') {
+	} 
+
+	else if(window.location.pathname === '/recruitment') {
 		if( $( window ).width() <= 767 ) {
 			$recruitmentParallaxHeader.removeClass('header');
 			padding = ( $( window ).height() / 2 ) - ( $recruitmentParallax.height() / 2 );
@@ -62,22 +62,36 @@ function coverParallax() {
 		}
 		$recruitmentParallax.css('padding-top', padding + 'px');
 	} 
+
+	else if(window.location.pathname === '/brothers') {
+		if( $( window ).width() <= 767 ) {
+			$brothersParallaxHeader.removeClass('header');
+			padding = ( $( window ).height() / 2 ) - ( $brothersParallax.height() / 2 );
+			$brothersParallax.css('padding-bottom', padding - 20 + 'px');
+		} else {
+			$brothersParallaxHeader.addClass('header');
+			padding = ( $( window ).height() / 2 ) - ( $brothersParallax.height() / 2 );
+			$brothersParallax.css('padding-bottom', padding - ( $nav.height() ) + 'px');
+		}
+		$brothersParallax.css('padding-top', padding + 'px');
+	} 
 }
 
 $(document).ready(function() {
 	parallaxGenerator();
 
 	var url = window.location.pathname;
-	if(url === "/" || url === "/recruitment") coverParallax();
+	if(url === "/" || url === "/recruitment" || url === '/brothers') 
+		coverParallax();
 
 	//Enables NiceScroll
 	$("html").niceScroll({cursorwidth:'8'});
 
 	// Change color of parallax text to white.
-	$( '.parallax' ).css('color', 'white');
+	$('.parallax').css('color', 'white');
 
 	// Makes the navigation bar fixed to the top.
-	$( 'nav.navbar').addClass('navbar-fixed-top');
+	$('nav.navbar').addClass('navbar-fixed-top');
 
 	// Adds the necessary classes to allow the navigation
 	// bar to collapse when users visit the website on a
@@ -105,7 +119,10 @@ $(document).ready(function() {
 }());
 
 $( window ).resize(function() {
-	if(window.location.pathname === '/' || window.location.pathname === '/recruitment') coverParallax();
+	if(window.location.pathname === '/' 
+		|| window.location.pathname === '/recruitment'
+		|| window.location.pathname === '/brothers')	
+		coverParallax();
 	if( $( window ).width() <= 767 ) { 
 		mobileParallax();
 		$('.main div:eq(1) div:eq(1)').removeClass('top-space');
