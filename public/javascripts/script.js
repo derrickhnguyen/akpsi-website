@@ -14,6 +14,15 @@ var $recruitmentParallaxHeader = $('.recruitment h1');
 var $nav = $('nav');
 var $subnav = $( 'nav.navbar div.container-fluid div' ).eq(1)
 
+var $brotherCaption = $('.text-content');
+var $captionArray;
+
+function grabCaption(num) {
+	for(var i = 0; i < num; i++) {
+		captionArray[i] = 'text-content-' + (num + 1).toString();
+	}
+}
+
 // initializes parallax effect
 function parallaxGenerator() {
    	$homeParallax.parallax({imageSrc:'/assets/images/banners/home.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false'});
@@ -64,40 +73,6 @@ function coverParallax() {
 	}
 }
 
-$(document).ready(function() {
-	parallaxGenerator();
-
-	var url = window.location.pathname;
-	if(url === "/" || 
-	   url === "/recruitment" ||
-	   url === "/brothers" ||
-	   url === "/about") 
-		coverParallax();
-
-	//Enables NiceScroll
-	$("html").niceScroll({cursorwidth:'8'});
-
-	// Change color of parallax text to white.
-	$('.parallax').css('color', 'white');
-
-	// Makes the navigation bar fixed to the top.
-	$('nav.navbar').addClass('navbar-fixed-top');
-
-	// Adds the necessary classes to allow the navigation
-	// bar to collapse when users visit the website on a
-	// mobile device.
-	$subnav.addClass('collapse');
-	$subnav.addClass('navbar-collapse');
-	$subnav.attr('id', 'nav');
-
-	// The padding-size of parallaxs' block will change 
-	// accordingly.
-	if( $( window ).width() <= 767 ) {
-		if(window.location.pathname === '/about')
-			$('.main div:eq(1) div:eq(1)').removeClass('top-space');
-	}
-});
-
 // Smoothly move to the top of the page.
 (function backToTop() {
     $('a[href=#top]').click(function(){
@@ -118,4 +93,49 @@ $( window ).resize(function() {
 	} else if( $( window ).width() > 767 ) {
 		$('.main div:eq(1) div:eq(1)').addClass('top-space');
 	} 	
+});
+
+$(document).ready(function() {
+	parallaxGenerator();
+
+	var url = window.location.pathname;
+	if(url === '/' || 
+	   url === '/recruitment' ||
+	   url === '/brothers' ||
+	   url === '/about') 
+		coverParallax();
+
+	if(url === '/brothers') {
+		$brotherCaption.css('position', 'relative');
+		$brotherCaption.css('bottom', 140 + 'px');
+		$brotherCaption.css('opacity', 0);
+		$brotherCaption.addClass('white');
+
+		$('.headshot').hover(function() {
+			$brotherCaption.css('opacity', 1);
+		}, function() {
+			$brotherCaption.css('opacity', 0);
+		})
+	}
+
+	//Enables NiceScroll
+	$('html').niceScroll({cursorwidth:'8'});
+
+	// Change color of parallax text to white.
+	$('.parallax').css('color', 'white');
+
+	// Makes the navigation bar fixed to the top.
+	$('nav.navbar').addClass('navbar-fixed-top');
+
+	// Adds the necessary classes to allow the navigation
+	// bar to collapse when users visit the website on a
+	// mobile device.
+	$subnav.addClass('collapse');
+	$subnav.addClass('navbar-collapse');
+	$subnav.attr('id', 'nav');
+
+	if( $( window ).width() <= 767 ) {
+		if(window.location.pathname === '/about')
+			$('.main div:eq(1) div:eq(1)').removeClass('top-space');
+	}
 });
