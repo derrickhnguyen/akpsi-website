@@ -6,7 +6,7 @@ var filesize = require('gulp-filesize');
 var cleanCSS = require('gulp-clean-css');
 
 gulp.task('concatJS', function() {
-	return gulp.src('./public/javascripts/*.js')
+	return gulp.src(['./public/javascripts/lightbox.js', './public/javascripts/parallax.js'])
 		.pipe(concat('vendor.js'))
 		.pipe(uglify())
 		.pipe(filesize())
@@ -15,7 +15,7 @@ gulp.task('concatJS', function() {
 });
 
 gulp.task('concatCSS', function() {
-	return gulp.src('./public/stylesheets/*.css')
+	return gulp.src('./public/stylesheets/lightbox.css')
 		.pipe(concat('vendor.css'))
 		.pipe(cleanCSS())
 		.pipe(gulp.dest('./public/stylesheets/min/'))

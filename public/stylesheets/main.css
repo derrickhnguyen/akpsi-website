@@ -62,6 +62,10 @@
 	padding-top: 25px;
 }
 
+.black {
+  color: #000000;
+}
+
 .gold {
 	color: #8B7500;
 }
@@ -119,8 +123,6 @@ a#backtotop {
 /*------------------------------------------------------------------------------
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
-
-
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
@@ -204,14 +206,11 @@ ul.nav {
     position:absolute;
 }
 
-.headshot:hover {
-    opacity: .7;
-}
-
-.text-content {
-  position: relative;
-  bottom: 140px;
-  opacity: 0;
+a.img-responsive:link,
+a.img-responsive:visited,
+a.img-responsive:hover,
+a.img-responsive:active {
+  text-decoration: none;
 }
 /*------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
