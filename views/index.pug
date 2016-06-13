@@ -1,20 +1,19 @@
-doctype html
-html
+include ./includes/header.pug
+body
+	include ./includes/navigation.pug
 	
-	include ./includes/header.pug
+	div.container-fluid.main
 
-	body
+		div.container-fluid(class="parallax abril-fatface text-center home")
+			h1 ALPHA KAPPA PSI
+			h2 Shaping People, Shaping Business
+			a(href="/about", class="homeBtnLink")
+				button.btn.btn-primary.active(type='button', class='homeBtn montserrat', 
+					style={'background-color': 'white',
+						   'color': 'black',
+						   'border': '0px',
+						   'font-size': '20px'}) LEARN MORE
 
-		include ./includes/navigation.pug
-		
-		div.container-fluid.main
-
-			div.container-fluid(class="parallax open-sans text-center home")
-				h1
-					strong ALPHA KAPPA PSI
-				h2
-					strong Shaping People, Shaping Business
-
-		include ./includes/scripts.pug
+	include ./includes/scripts.pug
 
 		

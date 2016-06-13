@@ -43,8 +43,23 @@
 }
 
 .newsletter {
-    width: 38%;
-    margin: 0 auto;
+  width: 38%;
+  margin: 0 auto;
+}
+
+.homeBtnLink {
+  text-decoration: none;
+}
+
+.homeBtn {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.homeBtn:hover {
+  opacity: 0.7;
 }
 /*------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -86,12 +101,20 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.abril-fatface {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .font-lg {
 	font-size: 4.18em;
 }
 
 .font-md {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .header {
@@ -103,7 +126,7 @@
 }
 
 q {
-    quotes: '"' '"';
+  quotes: '"' '"';
 }
 
 body {

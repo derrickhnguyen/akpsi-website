@@ -1,51 +1,46 @@
-doctype html
-html
-	
-	include ./includes/header.pug
+include ./includes/header.pug
+body
+	include ./includes/navigation.pug
 
-	body
-
-		include ./includes/navigation.pug
-
-		div.container-fluid.main
-			div.container(class="top-bot-space")
-				div.row(class="text-center")
-					div.col-md-12
-						h1(class="Raleway") Contact Us
-						p
-							i We love hearing from you.
-								br
-								|	Please send us any questions or comments that you may have and we will respond to you promptly
-
-				div.row
-					div.col-md-6(class="top-space text-center")
-						h3
-							strong CALIFORNIA STATE UNIVERSITY,
-								br
-								|	Long Beach
+	div.container-fluid.main
+		div.container(class="top-bot-space")
+			div.row(class="text-center")
+				div.col-md-12
+					h1(class="Raleway") Contact Us
+					p
+						i We love hearing from you.
 							br
-						h5
-							strong
-								i 1250 Bellflower Boulevard
-									br
-									|	Long Beach, CA 90840
-						div.map-responsive
-							iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1033990987294!2d-118.11627908437463!3d33.78382793927384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd31d82982f643%3A0x1fdc7f26cec72dab!2sCalifornia+State+University+Long+Beach!5e0!3m2!1sen!2sus!4v1451944316374", width="600", height="450", frameborder="0", style="border:0", allowfullscreen)
+							|	Please send us any questions or comments that you may have and we will respond to you promptly
 
-					div.col-md-6(class="top-space", style="padding-top:30px;")
-						form(role="form", action="/contact", method="POST")
-							div.form-group
-								label(for="fullName") Full Name:
-								input.form-control#fullName(type="text", autocomplete="off" , name="fullName")
-							div.form-group
-								label(for="email") Email::
-								input.form-control#email(type="text", autocomplete="off", name="email")
-							div.form-group
-								label(for="subject") Subject:
-								input.form-control#subject(type="text", autocomplete="off", name="subject")
-							div.form-group
-								label(for="message") Message:
-								textarea.form-control#message(type="text", autocomplete="off", name="message", rows="5")
-							button.btn.btn-default(type="submit") Submit
+			div.row
+				div.col-md-6(class="top-space text-center")
+					h3
+						strong CALIFORNIA STATE UNIVERSITY,
+							br
+							|	Long Beach
+						br
+					h5
+						strong
+							i 1250 Bellflower Boulevard
+								br
+								|	Long Beach, CA 90840
+					div.map-responsive
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.1033990987294!2d-118.11627908437463!3d33.78382793927384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd31d82982f643%3A0x1fdc7f26cec72dab!2sCalifornia+State+University+Long+Beach!5e0!3m2!1sen!2sus!4v1451944316374", width="600", height="450", frameborder="0", style="border:0", allowfullscreen)
 
-			include ./includes/footer.pug
+				div.col-md-6(class="top-space", style="padding-top:30px;")
+					form(role="form", action="/contact", method="POST")
+						div.form-group
+							label(for="fullName") Full Name:
+							input.form-control#fullName(type="text", autocomplete="off" , name="fullName")
+						div.form-group
+							label(for="email") Email::
+							input.form-control#email(type="text", autocomplete="off", name="email")
+						div.form-group
+							label(for="subject") Subject:
+							input.form-control#subject(type="text", autocomplete="off", name="subject")
+						div.form-group
+							label(for="message") Message:
+							textarea.form-control#message(type="text", autocomplete="off", name="message", rows="5")
+						button.btn.btn-default(type="submit") Submit
+
+	include ./includes/footer.pug
