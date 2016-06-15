@@ -10,7 +10,6 @@ var $recruitmentParallaxHeader = $('.recruitment h1');
 var $nav = $('nav');
 var $subnav = $( 'nav.navbar div.container-fluid div' ).eq(1);
 var $headshot = $('.headshot');
-var $captionArray = new Array();
 
 // Highlights the section of the navigation the users is in
 function highlightNav() {
@@ -44,11 +43,8 @@ function highlightNav() {
 function parallaxGenerator() {
    	switch(window.location.pathname) {
    		case '/':
-	 		if(window.mobilecheck()) {
-				$homeParallax.parallax({imageSrc:'/assets/images/banners/home-mb.jpg', naturalWidth:'675', naturalHeight:'1100', bleed:'10', androidFix:'false', positionY:'10px'});
-			} else {
-				$homeParallax.parallax({imageSrc:'/assets/images/banners/home.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false', positionY:'10px'});
-			}
+	 		if(window.mobilecheck()) $homeParallax.parallax({imageSrc:'/assets/images/banners/home-mb.jpg', naturalWidth:'675', naturalHeight:'1100', bleed:'10', androidFix:'false', positionY:'10px'});
+			else $homeParallax.parallax({imageSrc:'/assets/images/banners/home.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false', positionY:'10px'});
 			break;
 		case '/about':
 			$aboutParallax.parallax({imageSrc:'/assets/images/banners/businessman.jpg', naturalWidth:'2000', naturalHeight:'1200', bleed:'10', androidFix:'false', positionY:'10px'});
@@ -95,81 +91,69 @@ function coverParallax() {
 
 	// If the screen is less than 767px, then the header class will
 	// be removed, and then the padding will be generated.
-	if($( window ).width() <= 767) {
-		parallaxHeader.removeClass('header');
-		padding = ($( window ).height() / 2) - (parallax.height() / 2);
-		parallax.css('padding-bottom', padding - 20 + 'px');
-		parallax.css('padding-top', padding + 'px');
-	} 
-
-	// If the screen is larger than 767px, then the header  class will
-	// be added, and then the padding will be generated.
-	else {
-		parallaxHeader.addClass('header');
-		padding = ( $( window ).height() / 2 ) - ( parallax.height() / 2 );
-
-		// If the user is on the About or Brothers page, then the parallax
-		// image will only take up less than half of the page. Else, it will
-		// fill up the entire page.
-		if(window.location.pathname === '/about' || window.location.pathname === '/brothers') {
-			parallax.css('padding-bottom', padding - ($(window).height() / 5) + 'px');
-			parallax.css('padding-top', padding - ($(window).height() / 5) + 'px');					
+	if(parallax) {
+		if($( window ).width() <= 767) {
+			parallaxHeader.removeClass('header');
+			padding = ($( window ).height() / 2) - (parallax.height() / 2);
 		} else {
-			parallax.css('padding-bottom', padding - ($nav.height() - 30) + 'px');	
-			parallax.css('padding-top', padding + 'px');			
+			parallaxHeader.addClass('header');
+			padding = ( $( window ).height() / 2 ) - ( parallax.height() / 2 );
 		}
 	}
-}
 
-// For every brother in the brother's page. There is a caption with
-// class, '.text-content-*', where * is a number. This function
-// generates those classes and puts them into an array. 
-function grabCaption(num) {
-	for(var i = 0; i < num; i++) {
-		$captionArray[i] = '.text-content-' + (i + 1).toString();
+
+	// If the user is on the About or Brothers page, then the parallax
+	// image will only take up less than half of the page. Else, it will
+	// fill up the entire page.
+	if(window.location.pathname === '/') {
+		parallax.css('padding-bottom', padding - ($(window).height() / 40) + 'px');	
+		parallax.css('padding-top', padding + 'px');				
+	} else {
+		parallax.css('padding-bottom', padding - ($(window).height() / 5) + 'px');
+		parallax.css('padding-top', padding - ($(window).height() / 5) + 'px');					
 	}
 }
+
+var $captionArray = new Array();
 
 function brotherImgOnHover() {
-	// Generates on-hover effect on the brother images by using the 
-	// grabCaption() function to build the array and populate 
-	// them accordingly with the effects.
-	if(window.location.pathname === '/brothers') {
-		grabCaption($headshot.size());
-		for(var i = 0; i < $headshot.size(); i++) {
-			$($captionArray[i]).css('position', 'relative');
-			$($captionArray[i]).css('bottom', 40 + 'px');
-			$($captionArray[i]).css('opacity', 0.0);
-			$($captionArray[i]).css('cursor', 'pointer');
-			$($captionArray[i]).css('padding-bottom', '2px');
-			$($captionArray[i]).css('color', 'white');
-			$($captionArray[i]).css('text-shadow', '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000');
-			$($captionArray[i]).addClass('black');
-			$($captionArray[i]).hover(function() {
-				$(this).css('opacity', 1.0)
-			}, function() {
-				$(this).css('opacity', 0.0)
-			});
-		}
-
-		$headshot.each(function(index) {
-			$(this).hover(function() {
-				$($captionArray[index]).css('opacity', 1.0);
-				$(this).css('opacity', 0.7);
-			}, function() {
-				$($captionArray[index]).css('opacity', 0);
-				$(this).css('opacity', 1.0);
-			});
-		});
-
-		$headshot.each(function(index) {
-			$($captionArray[index]).hover(function() {
-				$headshot.eq(index).css('opacity', 0.7);
-			}, function() {
-				$headshot.eq(index).css('opacity', 1.0);
-			})
+	// Generates on-hover effect on the brother images by using this
+	// for loop to build the array and populate them accordingly with 
+	// the effects.
+	for(var i = 0; i < $headshot.size(); i++) {
+		$captionArray[i] = '.text-content-' + (i + 1).toString();
+		$($captionArray[i]).css('position', 'relative');
+		$($captionArray[i]).css('bottom', 50 + 'px');
+		$($captionArray[i]).css('opacity', 0.0);
+		$($captionArray[i]).css('cursor', 'pointer');
+		$($captionArray[i]).css('padding-bottom', '2px');
+		$($captionArray[i]).css('color', 'white');
+		$($captionArray[i]).css('text-shadow', '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000');
+		$($captionArray[i]).addClass('black');
+		$($captionArray[i]).hover(function() {
+			$(this).css('opacity', 1.0)
+		}, function() {
+			$(this).css('opacity', 0.0)
 		});
 	}
+
+	$headshot.each(function(index) {
+		$(this).hover(function() {
+			$($captionArray[index]).css('opacity', 1.0);
+			$(this).css('opacity', 0.8);
+		}, function() {
+			$($captionArray[index]).css('opacity', 0);
+			$(this).css('opacity', 1.0);
+		});
+	});
+
+	$headshot.each(function(index) {
+		$($captionArray[index]).hover(function() {
+			$headshot.eq(index).css('opacity', 0.8);
+		}, function() {
+			$headshot.eq(index).css('opacity', 1.0);
+		})
+	});
 }
 
 // If the user clicks on the back to top button, then
@@ -201,8 +185,10 @@ $(document).ready(function() {
 
 	// Generate hover effect on brother images
 	// in the brothers page.
-	brotherImgOnHover();
-
+	if(window.location.pathname === '/brothers') {
+		brotherImgOnHover();
+	}
+	
 	// Generate fadeIn effect on the home page.
 	if(window.location.pathname === '/') {
 		$('.home').css('display', 'none').fadeIn(350);
@@ -216,9 +202,7 @@ $(document).ready(function() {
 	$('nav.navbar').addClass('navbar-fixed-top');
 
 	// Make the navigation bar collapsable for mobile-view.
-	$subnav.addClass('collapse');
-	$subnav.addClass('navbar-collapse');
-	$subnav.attr('id', 'nav');
+	//$subnav.addClass('collapse').addClass('navbar-collapse').attr('id', 'nav');
 });
 
 // When window is resized...

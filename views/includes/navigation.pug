@@ -1,20 +1,23 @@
 nav.navbar.navbar-default
 	div.container-fluid
 		div.navbar-header
-			button(type="button", class="navbar-toggle", data-toggle="collapse", data-target="#nav")
+			button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#nav')
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-			a.navbar-brand(href="/") CSULB AKPSI
-		div
+			a.navbar-brand(href='/') CSULB AKPSI
+		div#nav.collapse.navbar-collapse
 			ul.nav.navbar-nav.navbar-right
 				li.active
-					a(href="/") HOME
+					a(href='/') HOME
 				li.active
-					a(href="/about") ABOUT
+					a(href='/about') ABOUT
 				li.active
-					a(href="/brothers") BROTHERS
+					a(href='/brothers') BROTHERS
 				li.active
-					a(href="/recruitment") RECRUITMENT
+					a(href='/recruitment') RECRUITMENT
 				li.active
-					a(href="/contact") CONTACT
+					a(href='/contact') CONTACT
+
+noscript(style='color:red') 
+	div.container(class='text-center') **Please enable JavaScript to view full effect of website! 
