@@ -8,8 +8,6 @@
 - Media Queries
 ------------------------------------------------------------------------------*/
 
-
-
 /*------------------------------------------------------------------------------
 ------------------------------ GENERAL CONTENT ---------------------------------
 ------------------------------------------------------------------------------*/
@@ -132,6 +130,11 @@ button.btn.btn-default {
 ------------------------------------------------------------------------------*/
 .parallax-window {
   position: relative;
+  width: 100%;
+}
+
+.navbar {
+  z-index: 9999;
 }
 
 .navbar-nav li a,
@@ -145,19 +148,12 @@ button.btn.btn-default {
   opacity: 0.7;
 }
 
-.navbar-header {
-  padding-left: 14px;
-}
-
 .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-ul.nav {
-  margin-right: 14px;
-}
-
 .title {
+  width: 90%;
   color: white;
   margin: 0;
   position: absolute;
@@ -253,15 +249,24 @@ ul.social li.twitter a {
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 48px;
     }
 
     h2 {
-      font-size: 24px;
+      font-size: 36px;
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 24px;
+    }
+
+    .navbar .collapse {
+      background-color: #fff;
+      opacity: 0.9;
+    }
+
+    .navbar .collapse ul li a {
+      color: #000;
     }
 
     .map-responsive {

@@ -1,11 +1,7 @@
-
-var $nav = $('.parallax-window');
-var $headshot = $('.headshot');
-
-var $captionArray = new Array();
-
 function brotherImgOnHover() {
-	for(var i = 0; i < $headshot.size(); i++) {
+	var $headshot = $('.headshot');
+	var $captionArray = new Array();
+	for (var i = 0; i < $headshot.size(); i++) {
 		$captionArray[i] = '.text-content-' + (i + 1).toString();
 		$($captionArray[i]).css('position', 'relative');
 		$($captionArray[i]).css('bottom', 50 + 'px');
@@ -14,7 +10,6 @@ function brotherImgOnHover() {
 		$($captionArray[i]).css('padding-bottom', '2px');
 		$($captionArray[i]).css('color', 'white');
 		$($captionArray[i]).css('text-shadow', '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000');
-		$($captionArray[i]).addClass('black');
 		$($captionArray[i]).hover(function() {
 			$(this).css('opacity', 1.0)
 		}, function() {
@@ -54,15 +49,37 @@ window.mobilecheck = function() {
   return check;
 }
 
-$(document).ready(function() {
-	if(window.location.pathname === '/brothers') {
-		brotherImgOnHover();
-	}
+function foo() {
+	var navLink = $(".navbar-nav li a[href=" + "'" + window.location.pathname + "'" + "]");
 
-	if(window.location.pathname === '/') {
-		$nav.css('display', 'none').fadeIn(450);
+	if ($(window).width() >= 768) {
+		navLink.css('border-bottom', '2px solid #3498db');
+
+		if (window.location.pathname === '/') {
+			$('.title h1').css('font-size', '90px');
+		} 
+
+		else if (window.location.pathname === '/brothers') {
+			brotherImgOnHover();
+		}
 	} 
 
-	var navLink = $(".navbar-nav li a[href=" + "'" + window.location.pathname + "'" + "]");
-	navLink.css('border-bottom', '2px solid #3498db');
+	else if ($(window).width() < 768) {
+		navLink.css('border-bottom', 'initial');
+		if (window.location.pathname === '/') {
+			$('.title h1').css('font-size', '48px');
+		}
+
+		else if (window.location.pathname === '/brothers') {
+			brotherImgOnHover();
+		}
+	}
+}
+
+$(document).ready(function() {
+	foo();
+
+	$(window).resize(function() {
+		foo();
+	});
 });

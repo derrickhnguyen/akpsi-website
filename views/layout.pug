@@ -10,8 +10,7 @@ html(lang='en')
 		meta(name='author', content='Derrick Nguyen')
 		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-
-		include ./includes/fonts
+			
 		include ./includes/styles
 
 	body(class='montserrat')
@@ -19,7 +18,7 @@ html(lang='en')
 			div.container(class='text-center') **Please enable JavaScript to view full effect of website! 
 
 		div.container-fluid(class='parallax-window home', data-parallax='scroll', data-image-src=parallaxUrl, data-position=backgroundPosition, data-natural-width='2000', data-natural-height='1200', style={'height':height})
-			nav.navbar.navbar-transparent
+			nav.navbar
 				div.container-fluid
 					div.navbar-header
 						button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#nav')
@@ -36,9 +35,9 @@ html(lang='en')
 							li.active
 								a(href='/brothers') BROTHERS
 							li.active
-								a(href='/contact') CONTACT
-							li.active
 								a(href='/recruitment') RECRUITMENT
+							li.active
+								a(href='/contact') CONTACT
 			div.title(class='text-center open-sans')
 				h1 #{header}
 				h2 #{subheader}

@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', 
   	{
   		parallaxUrl: '/assets/images/banners/home.jpg',
+  		backgroundPosition: 'center',
   		header: 'ALPHA KAPPA PSI',
   		subheader: 'Shaping People, Shaping Business',
   		height: '100vh'
@@ -75,7 +76,7 @@ router.get('/contact', function(req, res, next) {
 			backgroundPosition: 'bottom',
 			header: 'Contact Us',
 			subheader: 'We love hearing from you.',
-			height: '50vh'
+			height: '60vh'
 		}
 	);
 });
