@@ -95,6 +95,10 @@ h3 {
   color: #3498db;
 }
 
+.secondary {
+  color: #f1c40f;
+}
+
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
@@ -114,6 +118,11 @@ q {
 a#backtotop {
   color: black;
   text-decoration: none;
+}
+
+button.btn.btn-default {
+  background-color: #f1c40f;
+  color: #FFF;
 }
 
 
@@ -159,9 +168,18 @@ ul.nav {
 .title button {
   padding: 8px 30px;
   border: 0px;
-  background-color: #3498db;
   margin-top: 25px;
   font-size: 18px;
+}
+
+.title button:link,
+.title button:active,
+.title button:visited {
+  text-decoration: none;
+}
+
+.title button:hover {
+  opacity: 0.8;
 }
 
 
