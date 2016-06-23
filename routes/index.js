@@ -5,22 +5,53 @@ var ContactMessages = require('../models/contactModel');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', 
+  	{
+  		parallaxUrl: '/assets/images/banners/home.jpg',
+  		header: 'ALPHA KAPPA PSI',
+  		subheader: 'Shaping People, Shaping Business',
+  		height: '100vh'
+  	}
+  );
 });
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-	res.render('about');
+	res.render('about',
+		{
+			parallaxUrl: '/assets/images/banners/businessman.jpg',
+			backgroundPosition: 'top',
+			header: 'LEARN MORE',
+			subheader: 'About the Fraternity and Chapter',
+			height: '60vh'
+		}
+	);
 });
 
 /* GET brothers page. */
 router.get('/brothers', function(req, res, next) {
-	res.render('brothers');
+	res.render('brothers',
+		{
+			parallaxUrl: '/assets/images/banners/brothers.jpg',
+			backgroundPosition: 'top',
+			header: 'MEET THE BROTHERS',
+			subheader: '',
+			height: '60vh'
+		}
+	);
 });
 
 /* GET recruitment page. */
 router.get('/recruitment', function(req, res, next) {
-	res.render('recruitment');
+	res.render('recruitment',
+		{
+			parallaxUrl: '/assets/images/banners/recruitment.jpg',
+			backgroundPosition: 'top',
+			header: 'Fall 2016 Rush Week Coming Soon!',
+			subheader: '',
+			height: '60vh'
+		}
+	);
 });
 
 /* POST information from recruitment page. */
@@ -38,7 +69,15 @@ router.post('/recruitment', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-	res.render('contact');
+	res.render('contact',
+		{
+			parallaxUrl: '/assets/images/banners/contact.jpg',
+			backgroundPosition: 'bottom',
+			header: 'Contact Us',
+			subheader: 'We love hearing from you.',
+			height: '50vh'
+		}
+	);
 });
 
 /* POST information from contact page. */

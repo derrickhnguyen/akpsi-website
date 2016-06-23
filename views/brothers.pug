@@ -1,12 +1,7 @@
-include ./includes/header.pug
-body
-	include ./includes/navigation.pug
-	
-	div.container-fluid.main
-		div.container-fluid(class='parallax open-sans text-center brothers')
-			h1 
-				b MEET THE BROTHERS
+extends layout
 
+block content
+	div.container-fluid.main
 		div.container(class='top-bot-space text-center')
 			div.row
 				div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6

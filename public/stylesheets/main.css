@@ -18,12 +18,12 @@
 }
 
 .bottom-space {
-  margin-bottom: 5em;      
+  margin-bottom: 25px;      
 }                             
 
 .top-bot-space {          
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .float-left {
@@ -47,24 +47,6 @@
   margin: 0 auto;
 }
 
-.homeBtnLink {
-  text-decoration: none;
-}
-
-.homeBtn {
-  position: fixed;
-  top: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.homeBtn:hover {
-  opacity: 0.7;
-}
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
-
 
 
 /*------------------------------------------------------------------------------
@@ -73,142 +55,114 @@
 .navbar li a, 
 .navbar .navbar-brand {
   color: #000000;
-  font-size: 1.2em;
+  font-size: 18px;
   padding-top: 25px;
+}
+
+body, p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 28px;
 }
 
 .black {
   color: #000000;
 }
 
-.gold {
-  color: #8B7500;
-}
-
-.blue {
-  color: #000080;
-}
-
 .white {
   color: #FFFFFF;
+}
+
+.darkbase {
+  color : #175781;
+}
+
+.lightbase {
+  color: #8bc4ea;
+}
+
+.base {
+  color: #3498db;
 }
 
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
 
-.open-sans{
+.open-sans {
   font-family: 'Open Sans', sans-serif;
-}
-
-.abril-fatface {
-  font-family: 'Abril Fatface', cursive;
 }
 
 .montserrat {
   font-family: 'Montserrat', sans-serif;
 }
 
-.font-lg {
-  font-size: 4.18em;
-}
-
-.font-md {
-  font-size: 2.5em;
-}
-
-.header {
-  font-size: 5em;
-}
-
-.subheader {
-  font-size: 3.5em;
-}
-
-.parallax h1,
-.parallax h2 {
-  opacity: 0.8;
-}
-
 q {
   quotes: '"' '"';
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
 }
 
 a#backtotop {
   color: black;
   text-decoration: none;
 }
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
 
 
 
 /*------------------------------------------------------------------------------
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
-.navbar-default {
-  background-color: #ffffff;
-  border-color: #ffffff;
+.parallax-window {
+  position: relative;
 }
-.navbar-default .navbar-brand {
-  color: #000000;
+
+.navbar-nav li a,
+.navbar-header .navbar-brand {
+  color: #fff;
 }
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #000000;
-}
-.navbar-default .navbar-text {
-  color: #000000;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #000000;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #000000;
-}
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle {
-  border-color: #ffffff;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ffffff;
-}
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #000000;
-}
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #000000;
-}
-.navbar-default .navbar-link {
-  color: #000000;
-}
-.navbar-default .navbar-link:hover {
-  color: #000000;
+
+.navbar-header .navbar-brand:hover,
+.navbar-nav li a:hover {
+  background-color: initial;
+  opacity: 0.7;
 }
 
 .navbar-header {
   padding-left: 14px;
 }
 
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
 ul.nav {
   margin-right: 14px;
 }
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
 
+.title {
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) }
+
+.title button {
+  padding: 8px 30px;
+  border: 0px;
+  background-color: #3498db;
+  margin-top: 25px;
+  font-size: 18px;
+}
 
 
 /*------------------------------------------------------------------------------
@@ -240,9 +194,6 @@ a.img-responsive:hover,
 a.img-responsive:active {
   text-decoration: none;
 }
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
 
 
 
@@ -272,24 +223,6 @@ ul.social li.instagram a {
 ul.social li.twitter a {
   color: rgb(29, 202, 255);
 }
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
-
-
-
-/*------------------------------------------------------------------------------
--------------------------------- PARALLAX --------------------------------------
-------------------------------------------------------------------------------*/
-.home,
-.recruitment,
-.about,
-.brothers {
-  background:transparent;
-}
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/
 
 
 
@@ -297,6 +230,22 @@ ul.social li.twitter a {
 ----------------------------- MEDIA QUERIES ------------------------------------
 ------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
+    body, p {
+      font-size: 14px;
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
     .map-responsive {
       display: none;
     }
@@ -323,19 +272,3 @@ ul.social li.twitter a {
       width: 75%;
     }
 }
-
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #000000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #000000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #000000;
-    background-color: #ffffff;
-  }
-}
-/*------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-------------------------------------------------------------------------------*/

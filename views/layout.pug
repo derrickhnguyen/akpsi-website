@@ -9,16 +9,10 @@ html(lang='en')
 		meta(name='keywords', content='CSULB, AKPsi, Delta, Omicron, Chapter')
 		meta(name='author', content='Derrick Nguyen')
 		meta(charset='utf-8')
-
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 
-		link(href='https://fonts.googleapis.com/css?family=Raleway:300', rel='stylesheet', type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,800', rel='stylesheet', type='text/css')
-
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
-		link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-		link(rel='stylesheet', type='text/css', href='/assets/stylesheets/min/vendor.css')
+		include ./includes/fonts
+		include ./includes/styles
 
 	body(class='montserrat')
 		noscript(style='color:red') 
@@ -48,6 +42,5 @@ html(lang='en')
 			div.title(class='text-center open-sans')
 				h1 #{header}
 				h2 #{subheader}
-				a(href='/about')
-					button.btn.btn-primary(type='button') ENTER
-	include ./includes/scripts.pug
+
+		block content

@@ -1,20 +1,10 @@
-include ./includes/header.pug
-body
-	include ./includes/navigation.pug
+extends layout
 
+block content
 	div.container-fluid.main
-
-		div.container-fluid(class='parallax open-sans recruitment')
-			div.row(class='text-center')
-					div.col-md-12
-						h1.header 
-							b Fall 2016 Rush Week 
-							br
-							b Coming Soon!
-
 		div.container(class='top-bot-space text-center')
 			div.row
-				div.col-md-12
+				div.col-md-12(class='top-space')
 					p
 						strong Applications for Fall 2016 Recruitment are coming soon
 					p(class='top-space')
