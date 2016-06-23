@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
 	res.render('about',
 		{
-			parallaxUrl: '/assets/images/banners/businessman.jpg',
+			parallaxUrl: '/assets/images/banners/about.jpg',
 			backgroundPosition: 'top',
 			header: 'LEARN MORE',
 			subheader: 'About the Fraternity and Chapter',
