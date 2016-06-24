@@ -53,7 +53,12 @@ function foo() {
 	var navLink = $(".navbar-nav li a[href=" + "'" + window.location.pathname + "'" + "]");
 
 	if ($(window).width() >= 768) {
-		navLink.css('border-bottom', '2px solid #3498db');
+		if(window.location.pathname.indexOf('/brothers') > -1) {
+		 	navLink = $(".navbar-nav li a[href=" + "'#'" + "]");
+		 	navLink.css('border-bottom', '2px solid #3498db');
+		} else {
+			navLink.css('border-bottom', '2px solid #3498db');
+		}
 
 		if (window.location.pathname === '/') {
 			$('.title h1').css('font-size', '90px');

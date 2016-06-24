@@ -12,16 +12,16 @@
 ------------------------------ GENERAL CONTENT ---------------------------------
 ------------------------------------------------------------------------------*/
 .top-space {      
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .bottom-space {
-  margin-bottom: 25px;      
+  margin-bottom: 30px;      
 }                             
 
 .top-bot-space {          
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .float-left {
@@ -73,14 +73,6 @@ h3 {
   font-size: 28px;
 }
 
-.black {
-  color: #000000;
-}
-
-.white {
-  color: #FFFFFF;
-}
-
 .darkbase {
   color : #175781;
 }
@@ -94,7 +86,11 @@ h3 {
 }
 
 .secondary {
-  color: #f1c40f;
+  color: #e8930c;
+}
+
+.silver {
+  color: #bdc3c7;
 }
 
 .raleway {
@@ -114,13 +110,17 @@ q {
 }
 
 a#backtotop {
-  color: black;
+  color: #000;
   text-decoration: none;
 }
 
 button.btn.btn-default {
-  background-color: #f1c40f;
+  background-color: #e8930c;
   color: #FFF;
+}
+
+button.btn.btn-default:hover {
+  opacity: 0.8;
 }
 
 
@@ -129,6 +129,7 @@ button.btn.btn-default {
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
 .parallax-window {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   position: relative;
   width: 100%;
 }
@@ -138,8 +139,27 @@ button.btn.btn-default {
 }
 
 .navbar-nav li a,
+.navbar-nav li.dropdown ul.dropdown-menu li a,
 .navbar-header .navbar-brand {
+  background-color: initial;
   color: #fff;
+}
+
+.navbar-nav li.dropdown a.dropdown-toggle {
+  background-color: transparent;
+}
+
+.navbar-nav li.dropdown ul.dropdown-menu {
+  background-color: #bdc3c7;
+}
+
+.navbar-nav li.dropdown ul.dropdown-menu li.active a {
+  padding: 10px;
+}
+
+.navbar-nav li.dropdown a.dropdown-toggle span.caret {
+  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .navbar-header .navbar-brand:hover,
@@ -244,6 +264,19 @@ ul.social li.twitter a {
 ----------------------------- MEDIA QUERIES ------------------------------------
 ------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
+    .top-space {      
+      margin-top: 8px;
+    }
+
+    .bottom-space {
+      margin-bottom: 8px;      
+    }                             
+
+    .top-bot-space {          
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
     body, p {
       font-size: 14px;
     }
@@ -265,17 +298,13 @@ ul.social li.twitter a {
       opacity: 0.9;
     }
 
-    .navbar .collapse ul li a {
+    .navbar .collapse ul li a,
+    .navbar .collapse ul li.dropdown ul.dropdown-menu li.active a{
       color: #000;
     }
 
     .map-responsive {
       display: none;
-    }
-
-    .top-bot-space {
-      margin-top: 3em;
-      margin-bottom: 3em;
     }
 
     .navbar-brand {

@@ -42,6 +42,19 @@ router.get('/brothers', function(req, res, next) {
 	);
 });
 
+/* GET biography page. */
+router.get('/brothers/biographies', function(req, res, next) {
+	res.render('biographies',
+		{
+			parallaxUrl: '/assets/images/banners/biographies.jpg',
+			backgroundPosition: 'bottom',
+			header: 'HERE THEIR STORIES',
+			subheader: '',
+			height: '60vh'
+		}
+	);
+});
+
 /* GET recruitment page. */
 router.get('/recruitment', function(req, res, next) {
 	res.render('recruitment',

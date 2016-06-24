@@ -32,8 +32,14 @@ html(lang='en')
 								a(href='/') HOME
 							li.active
 								a(href='/about') ABOUT
-							li.active
-								a(href='/brothers') BROTHERS
+							li.active.dropdown
+								a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false') BROTHERS
+									span(class='caret')
+								ul.dropdown-menu
+									li.active
+										a(href='/brothers') Active Brothers
+									li.active
+										a(href='/brothers/biographies') Biographies
 							li.active
 								a(href='/recruitment') RECRUITMENT
 							li.active
