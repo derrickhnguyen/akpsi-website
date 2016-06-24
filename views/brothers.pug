@@ -1,93 +1,28 @@
 extends layout
 
 block content
-	div.container-fluid.main
-		div.container(class='top-bot-space text-center')
-			div.row
-				div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/austin-headshot-lg.jpg', data-lightbox='groupies', data-title='Austin Yao')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/austin-headshot-sm.jpg', alt='Austin Yao')
-							span.text-content-1 Austin Yao 
+	div.container(class='top-bot-space text-center')
+		div.row(class='top-space')
+			- for (var x = 0; x < activeBrothers.length; x++)
+				if ((x % 4) === 0)
+					div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
+						div
+							a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
+								img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
+								span(class=activeBrothers[x].order) #{activeBrothers[x].name}
+				else 
+					div.col-md-2.col-sm-3.col-xs-6
+						div
+							a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
+								img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
+								span(class=activeBrothers[x].order) #{activeBrothers[x].name}
 
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/branden-headshot-lg.jpg', data-lightbox='groupies', data-title='Branden Saito')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/branden-headshot-sm.jpg', alt='Branden Saito')
-							span.text-content-2 Branden Saito
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/darrin-headshot-lg.jpg', data-lightbox='groupies', data-title='Darrin Nguyen')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/darrin-headshot-sm.jpg', alt='Darrin Nguyen')
-							span.text-content-3 Darrin Nguyen
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/denny-headshot-lg.jpg', data-lightbox='groupies', data-title='Denny Co')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/denny-headshot-sm.jpg', alt='Denny Co')
-							span.text-content-4 Denny Co
-
-			div.row
-				div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/derrick-headshot-lg.jpg', data-lightbox='groupies', data-title='Derrick Nguyen')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/derrick-headshot-sm.jpg', alt='Derrick Nguyen')
-							span.text-content-5 Derrick Nguyen
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/eileen-headshot-lg.jpg', data-lightbox='groupies', data-title='Eileen Tran')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/eileen-headshot-sm.jpg', alt='Eileen Tran')
-							span.text-content-6 Eileen Tran			
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/kevin-headshot-lg.jpg', data-lightbox='groupies', data-title='Kevin Nguyen')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/kevin-headshot-sm.jpg', alt='Kevin Nguyen')
-							span.text-content-6 Kevin Nguyen
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/logan-headshot-lg.jpg', data-lightbox='groupies', data-title='Logan Wong')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/logan-headshot-sm.jpg', alt='Logan Wong')
-							span.text-content-7 Logan Wong
-			div.row
-				div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/melissa-2015-lg.jpg', data-lightbox='groupies', data-title='Melissa Thai')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/melissa-2015-sm.jpg', alt='Melissa Thai')
-							span.text-content-8 Melissa Thai
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/michelle-headshot-lg.jpg', data-lightbox='groupies', data-title='Michelle Ha')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/michelle-headshot-sm.jpg' alt='Michelle Ha')
-							span.text-content-9 Michella Ha
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/rose-headshot-lg.jpg', data-lightbox='groupies', data-title='Rose Solis')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/rose-headshot-sm.jpg', alt='Rose Solis')
-							span.text-content-10 Rose Solis
-
-				div.col-md-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/victor-headshot-lg.jpg', data-lightbox='groupies', data-title='Victor Vo')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/victor-headshot-sm.jpg', alt='Victor Vo')
-							span.text-content-11 Victor Vo
-			div.row
-				div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
-					div
-						a.img-responsive(href='/assets/images/headshots/vu-headshot-lg.jpg', data-lightbox='groupies', data-title='Vu Nguyen')
-							img.img-responsive.img.headshot(src='/assets/images/headshots/vu-headshot-sm.jpg', alt='Vu Nguyen')
-							span.text-content-12 Vu Nguyen
-
-			div.row.top-space
-				div.col-md-6.col-md-offset-3
-					p 
-						b Not pictured:
-						|  Alain Lopez, Kelsey Yonemura, Metita Tuileata, Shaina Williams, Timothy Chau, Tim Han, Vivian To
+		div.row.top-space
+			div.col-md-6.col-md-offset-3
+				p 
+					b Not pictured:
+					- for (var x = 0; x < notPictured.length; x++)
+						|  #{notPictured[x].name},
 
 	include ./includes/backtotop.pug
 	include ./includes/footer.pug

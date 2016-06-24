@@ -11,17 +11,20 @@
 /*------------------------------------------------------------------------------
 ------------------------------ GENERAL CONTENT ---------------------------------
 ------------------------------------------------------------------------------*/
-.top-space {      
-  margin-top: 30px;
+.top-space {  
+  position: relative;      
+  margin-top: 40px;
 }
 
 .bottom-space {
-  margin-bottom: 30px;      
+  position: relative;  
+  margin-bottom: 40px;      
 }                             
 
-.top-bot-space {          
-  margin-top: 30px;
-  margin-bottom: 30px;
+.top-bot-space {
+  position: relative;       
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .float-left {
@@ -32,6 +35,10 @@
   float: right;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .align-right {
   text-align: right;
 }
@@ -40,9 +47,18 @@
   text-align: left;
 }
 
-.newsletter {
-  width: 38%;
+.newsletter-email {
+  width: 25%;
   margin: 0 auto;
+}
+
+.newsletter-year {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.biographies {
+  margin-top: 55px;
 }
 
 
@@ -73,6 +89,16 @@ h3 {
   font-size: 28px;
 }
 
+.author {
+  font-size: 13px;
+  margin: 0;
+}
+
+.biographies p,
+.quote {
+  font-size: 14px;
+}
+
 .darkbase {
   color : #175781;
 }
@@ -86,7 +112,7 @@ h3 {
 }
 
 .secondary {
-  color: #e8930c;
+  color: #f1c40f;
 }
 
 .silver {
@@ -115,7 +141,7 @@ a#backtotop {
 }
 
 button.btn.btn-default {
-  background-color: #e8930c;
+  background-color: #f1c40f;
   color: #FFF;
 }
 
@@ -180,23 +206,7 @@ button.btn.btn-default:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) }
-
-.title button {
-  padding: 8px 30px;
-  border: 0px;
-  margin-top: 25px;
-  font-size: 18px;
-}
-
-.title button:link,
-.title button:active,
-.title button:visited {
-  text-decoration: none;
-}
-
-.title button:hover {
-  opacity: 0.8;
-}
+  
 
 
 /*------------------------------------------------------------------------------
@@ -205,7 +215,7 @@ button.btn.btn-default:hover {
 /*Banner images are 2000 x 1200*/
 .img-responsive {
   margin: 0 auto;
-  margin-top:25px;
+  margin-top: 10px;
 }
 
 .map-responsive {
@@ -265,16 +275,16 @@ ul.social li.twitter a {
 ------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px) {
     .top-space {      
-      margin-top: 8px;
+      margin-top: 30px;
     }
 
     .bottom-space {
-      margin-bottom: 8px;      
+      margin-bottom: 30px;      
     }                             
 
     .top-bot-space {          
-      margin-top: 8px;
-      margin-bottom: 8px;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
 
     body, p {
@@ -282,11 +292,11 @@ ul.social li.twitter a {
     }
 
     h1 {
-      font-size: 48px;
+      font-size: 40px;
     }
 
     h2 {
-      font-size: 36px;
+      font-size: 30px;
     }
 
     h3 {
@@ -316,7 +326,7 @@ ul.social li.twitter a {
       font-size: 8px;
     }
 
-    .newsletter {
+    .newsletter-email {
       width: 70%;
     }
 

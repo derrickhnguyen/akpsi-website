@@ -72,7 +72,8 @@ function foo() {
 	else if ($(window).width() < 768) {
 		navLink.css('border-bottom', 'initial');
 		if (window.location.pathname === '/') {
-			$('.title h1').css('font-size', '48px');
+			$('.title h1').css('font-size', '36px');
+			$('.title h2').css('font-size', '24px');
 		}
 
 		else if (window.location.pathname === '/brothers') {
