@@ -48,4 +48,19 @@ html(lang='en')
 				h1 #{header}
 				h2 #{subheader}
 
+			if pathname === '/'
+				div.container-fluid.social
+					div.row
+						div.col-md-12
+							ul.social
+								li.facebook
+									a(href='https://www.facebook.com/csulb.akpsi', target='_blank')
+										i.fa.fa-facebook-square.fa-lg
+								li.instagram
+									a(href='https://www.instagram.com/csulbakpsi', target='_blank')
+										i.fa.fa-instagram.fa-lg
+								li.twitter
+									a(href='https://twitter.com/csulbakpsi', target='_blank')
+										i.fa.fa-twitter.fa-lg
+
 		block content

@@ -52,11 +52,6 @@
   margin: 0 auto;
 }
 
-.newsletter-year {
-  width: 130px;
-  margin: 0 auto;
-}
-
 .biographies {
   margin-top: 55px;
 }
@@ -207,7 +202,16 @@ button.btn.btn-default:hover {
   left: 50%;
   transform: translate(-50%, -50%) }
   
+div.container-fluid.social {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+div.container-fluid.social ul.social li {
+  padding-left: 20px;
+}
 
 /*------------------------------------------------------------------------------
 ------------------------------ IMAGES & MEDIA ----------------------------------
@@ -245,15 +249,18 @@ a.img-responsive:active {
 ----------------------------- FOOTERS & ICONS ----------------------------------
 ------------------------------------------------------------------------------*/
 ul.social {
-  display: block;
-  margin: 5% 0;
+  position: relative;
+  bottom: 20px;
   list-style-type: none;
   text-align: center;
 }
+
 ul.social li {
+  position: relative;
+  right: 25px;
   font-size: 2em;
   display: inline;
-  padding: 0 2%;
+  padding-left: 10px;
 }
 
 ul.social li.facebook a {
@@ -266,6 +273,10 @@ ul.social li.instagram a {
 
 ul.social li.twitter a {
   color: rgb(29, 202, 255);
+}
+
+ul.social li a:hover {
+  opacity: 0.8;
 }
 
 
@@ -312,14 +323,17 @@ ul.social li.twitter a {
     .navbar .collapse ul li.dropdown ul.dropdown-menu li.active a{
       color: #000;
     }
-
-    .map-responsive {
-      display: none;
-    }
-
     .navbar-brand {
       position: relative;
       bottom: 10px;
+    }
+
+    div.container-fluid.social {
+      display: none;
+    }
+
+    .map-responsive {
+      display: none;
     }
 
     .footer {

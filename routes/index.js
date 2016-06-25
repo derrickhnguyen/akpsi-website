@@ -7,11 +7,12 @@ var ContactMessages = require('../models/contactModel');
 router.get('/', function(req, res, next) {
   res.render('index', 
   	{
-  		parallaxUrl: '/assets/images/banners/home.jpg',
+  		parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-home.jpg',
   		backgroundPosition: 'center',
   		header: 'ALPHA KAPPA PSI',
   		subheader: 'Shaping People, Shaping Business',
-  		height: '100vh'
+  		height: '100vh',
+  		pathname: '/'
   	}
   );
 });
@@ -20,11 +21,12 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
 	res.render('about',
 		{
-			parallaxUrl: '/assets/images/banners/about.jpg',
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-about.jpg',
 			backgroundPosition: 'top',
 			header: 'LEARN MORE',
 			subheader: 'About the Fraternity and Chapter',
-			height: '60vh'
+			height: '60vh',
+			pathname: '/about'
 		}
 	);
 });
@@ -33,7 +35,7 @@ router.get('/about', function(req, res, next) {
 router.get('/brothers', function(req, res, next) {
 	res.render('brothers',
 		{
-			parallaxUrl: '/assets/images/banners/brothers.jpg',
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-brothers.jpg',
 			backgroundPosition: 'top',
 			header: 'MEET THE BROTHERS',
 			subheader: '',
@@ -166,7 +168,8 @@ router.get('/brothers', function(req, res, next) {
 				{
 					name: 'Vivian To'
 				}
-			]
+			],
+			pathname: '/brothers'
 		}
 	);
 });
@@ -175,7 +178,7 @@ router.get('/brothers', function(req, res, next) {
 router.get('/brothers/biographies', function(req, res, next) {
 	res.render('biographies',
 		{
-			parallaxUrl: '/assets/images/banners/biographies.jpg',
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-biographies.jpg',
 			backgroundPosition: 'bottom',
 			header: 'LEARN MORE',
 			subheader: 'About the Brothers',
@@ -311,7 +314,21 @@ router.get('/brothers/biographies', function(req, res, next) {
 					why: 'To be more involved, to develop professionally, and to meet more people.',
 					fact: 'Basketball and hiking/I love anything Disney related.'
 				}
-			]
+			],
+			pathname: 'biographies'
+		}
+	);
+});
+
+router.get('/brothers/alumni', function(req, res, next){
+	res.render('alumni',
+		{
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-alumni.jpg',
+			backgroundPosition: 'top',
+			header: 'Hear About Their Experiences',
+			subheader: '',
+			height: '60vh',
+			pathname: '/recruitment'
 		}
 	);
 });
@@ -320,11 +337,12 @@ router.get('/brothers/biographies', function(req, res, next) {
 router.get('/recruitment', function(req, res, next) {
 	res.render('recruitment',
 		{
-			parallaxUrl: '/assets/images/banners/recruitment.jpg',
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-recruitment.jpg',
 			backgroundPosition: 'top',
 			header: 'Fall 2016 Rush Week Coming Soon!',
 			subheader: '',
-			height: '60vh'
+			height: '60vh',
+			pathname: '/recruitment'
 		}
 	);
 });
@@ -346,11 +364,12 @@ router.post('/recruitment', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
 	res.render('contact',
 		{
-			parallaxUrl: '/assets/images/banners/contact.jpg',
+			parallaxUrl: '/assets/images/banners/akpsi-delta-omicron-chapter-csulb-contact.jpg',
 			backgroundPosition: 'bottom',
 			header: 'Contact Us',
 			subheader: 'We love hearing from you.',
-			height: '60vh'
+			height: '60vh',
+			pathname: '/contact'
 		}
 	);
 });
