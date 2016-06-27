@@ -1,0 +1,137 @@
+{
+	"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-brothers.jpg",
+	"backgroundPosition": "top",
+	"header": "MEET THE BROTHERS",
+	"subheader": "",
+	"height": "60vh",
+	"activeBrothers": [
+		{
+			"name": "Austin Yao",
+			"img": {
+				"sm": "/assets/images/headshots/austin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/austin-headshot-lg.jpg"
+			},
+			"order": "text-content-1"
+		},
+		{
+			"name": "Branden Saito",
+			"img": {
+				"sm": "/assets/images/headshots/branden-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/branden-headshot-lg.jpg"
+			},
+			"order": "text-content-2"
+		},
+		{
+			"name": "Darrin Nguyen",
+			"img": {
+				"sm": "/assets/images/headshots/darrin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/darrin-headshot-lg.jpg"
+			},
+			"order": "text-content-3"
+		},
+		{
+			"name": "Denny Co",
+			"img": {
+				"sm": "/assets/images/headshots/denny-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/denny-headshot-lg.jpg"
+			},
+			"order": "text-content-4"
+		},
+		{
+			"name": "Derrick Nguyen",
+			"img": {
+				"sm": "/assets/images/headshots/derrick-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/derrick-headshot-lg.jpg"
+			},
+			"order": "text-content-5"
+		},
+		{
+			"name": "Eileen Tran",
+			"img": {
+				"sm": "/assets/images/headshots/eileen-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/eileen-headshot-lg.jpg"
+			},
+			"order": "text-content-6"
+		},
+		{
+			"name": "Kevin Nguyen",
+			"img": {
+				"sm": "/assets/images/headshots/kevin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/kevin-headshot-lg.jpg"
+			},
+			"order": "text-content-7"
+		},
+		{
+			"name": "Logan Wong",
+			"img": {
+				"sm": "/assets/images/headshots/logan-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/logan-headshot-lg.jpg"
+			},
+			"order": "text-content-8"
+		},
+		{
+			"name": "Melissa Thai",
+			"img": {
+				"sm": "/assets/images/headshots/melissa-2015-sm.jpg",
+				"lg": "/assets/images/headshots/melissa-2015-lg.jpg"
+			},
+			"order": "text-content-9"
+		},
+		{
+			"name": "Michelle Ha",
+			"img": {
+				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
+			},
+			"order": "text-content-10"
+		},
+		{
+			"name": "Rose Solis",
+			"img": {
+				"sm": "/assets/images/headshots/rose-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/rose-headshot-lg.jpg"
+			},
+			"order": "text-content-11"
+		},
+		{
+			"name": "Victor Vo",
+			"img": {
+				"sm": "/assets/images/headshots/victor-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
+			},
+			"order": "text-content-12"
+		},
+		{
+			"name": "Vu Nguyen",
+			"img": {
+				"sm": "/assets/images/headshots/vu-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/vu-headshot-lg.jpg"
+			},
+			"order": "text-content-13"
+		}
+	],
+	"notPictured": [
+		{
+			"name": "Alain Lopez"
+		},
+		{
+			"name": "Kelsey Yonemura"
+		},
+		{
+			"name": "Metita Tuileata"
+		},
+		{
+			"name": "Shaina Williams"
+		},
+		{
+			"name": "Timothy Chau"
+		},
+		{
+			"name": "Tim Han"
+		},
+		{
+			"name": "Vivian To"
+		}
+	],
+	"pathname": "/brothers"
+}

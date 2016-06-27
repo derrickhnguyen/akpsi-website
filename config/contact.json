@@ -1,0 +1,8 @@
+		{
+			"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-contact.jpg",
+			"backgroundPosition": "bottom",
+			"header": "Contact Us",
+			"subheader": "We love hearing from you.",
+			"height": "60vh",
+			"pathname": "/contact"
+		}

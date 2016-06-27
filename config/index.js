@@ -1,4 +1,4 @@
-var configValues = require('./config');
+var configValues = require('./mlab');
 
 module.exports = {
 	getDbConnectionString: function() {

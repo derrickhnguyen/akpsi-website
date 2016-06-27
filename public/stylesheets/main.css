@@ -56,18 +56,15 @@
   margin-top: 55px;
 }
 
+a:hover {
+  color: #8bc4ea;
+  text-decoration: underline;
+}
 
 
 /*------------------------------------------------------------------------------
 --------------------------------- TYPOGRAPHY -----------------------------------
 ------------------------------------------------------------------------------*/
-.navbar li a, 
-.navbar .navbar-brand {
-  color: #000000;
-  font-size: 18px;
-  padding-top: 25px;
-}
-
 body, p {
   font-size: 16px;
 }
@@ -87,6 +84,10 @@ h3 {
 .author {
   font-size: 13px;
   margin: 0;
+}
+
+.remove-margin {
+  margin: 1px;
 }
 
 .biographies p,
@@ -150,12 +151,16 @@ button.btn.btn-default:hover {
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
 .parallax-window {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  background-image: -moz-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  background-image: -o-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   position: relative;
   width: 100%;
 }
 
-.navbar {
+.navbar, {
   z-index: 9999;
 }
 
@@ -164,6 +169,8 @@ button.btn.btn-default:hover {
 .navbar-header .navbar-brand {
   background-color: initial;
   color: #fff;
+  font-size: 18px;
+  padding-top: 25px;
 }
 
 .navbar-nav li.dropdown a.dropdown-toggle {
@@ -334,10 +341,6 @@ ul.social li a:hover {
 
     .map-responsive {
       display: none;
-    }
-
-    .footer {
-      font-size: 8px;
     }
 
     .newsletter-email {
