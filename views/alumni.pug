@@ -6,28 +6,22 @@ block content
 			if ((x % 3) === 0)
 				div.row
 					div.col-xs-12.col-sm-4(class='top-space')
-						h3 #{alumniBrothers[x].name}
-						p(class='remove-margin') <strong>Class</strong>: #{alumniBrothers[x].class}
-						p(class='remove-margin') <strong>Year</strong>: #{alumniBrothers[x].year}
-						p(class='remove-margin') <strong>Major</strong>: #{alumniBrothers[x].major}
-						p(class='remove-margin') <strong>Why you joined</strong>: <em>#{alumniBrothers[x].why}</em>
-						p(class='remove-margin') <strong>Experience</strong>: <em>#{alumniBrothers[x].experience}</em>
+						h3(class='remove-margin') #{alumniBrothers[x].name}
+						p (works at #{alumniBrothers[x].work})
+						<em>#{alumniBrothers[x].why}</em>
+						<em>#{alumniBrothers[x].experience}</em>
 					if alumniBrothers[x + 1]
 						div.col-xs-12.col-sm-4(class='top-space')
-							h3 #{alumniBrothers[x + 1].name}
-							p(class='remove-margin') <strong>Class</strong>: #{alumniBrothers[x + 1].class}
-							p(class='remove-margin') <strong>Year</strong>: #{alumniBrothers[x + 1].year}
-							p(class='remove-margin') <strong>Major</strong>: #{alumniBrothers[x + 1].major}
-							p(class='remove-margin') <strong>Why you joined</strong>: <em>#{alumniBrothers[x + 1].why}</em>
-							p(class='remove-margin') <strong>Experience</strong>: <em>#{alumniBrothers[x + 1].experience}</em>
+							h3(class='remove-margin') #{alumniBrothers[x + 1].name}
+							p (works at #{alumniBrothers[x + 1].work})
+							<em>#{alumniBrothers[x + 1].why}</em>
+							<em>#{alumniBrothers[x + 1].experience}</em>
 					if alumniBrothers[x + 2]
 						div.col-xs-12.col-sm-4(class='top-space')
-							h3 #{alumniBrothers[x + 2].name}
-							p(class='remove-margin') <strong>Class</strong>: #{alumniBrothers[x + 2].class}
-							p(class='remove-margin') <strong>Year</strong>: #{alumniBrothers[x + 2].year}
-							p(class='remove-margin') <strong>Major</strong>: #{alumniBrothers[x + 2].major}
-							p(class='remove-margin') <strong>Why you joined</strong>: <em>#{alumniBrothers[x + 2].why}</em>
-							p(class='remove-margin') <strong>Experience</strong>: <em>#{alumniBrothers[x + 2].experience}</em>
+							h3(class='remove-margin') #{alumniBrothers[x + 2].name}
+							p (works at #{alumniBrothers[x + 2].work})
+							<em>#{alumniBrothers[x + 2].why}</em>
+							<em>#{alumniBrothers[x + 2].experience}</em>
 					
 	include ./includes/backtotop.pug
 	include ./includes/footer.pug
