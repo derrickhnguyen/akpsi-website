@@ -6,7 +6,7 @@ var jsonfile = require('jsonfile');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	var file = 'config/home.json';
+	var file = 'data/home.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('index', obj);
 	});
@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-	var file = 'config/about.json';
+	var file = 'data/about.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('about', obj);
 	});
@@ -22,7 +22,7 @@ router.get('/about', function(req, res, next) {
 
 /* GET brothers page. */
 router.get('/brothers', function(req, res, next) {
-	var file = 'config/brothers.json';
+	var file = 'data/brothers.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('brothers', obj);
 	});
@@ -30,14 +30,14 @@ router.get('/brothers', function(req, res, next) {
 
 /* GET biography page. */
 router.get('/brothers/biographies', function(req, res, next) {
-	var file = 'config/biographies.json';
+	var file = 'data/biographies.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('biographies', obj);
 	});
 });
 
 router.get('/brothers/alumni', function(req, res, next){
-	var file = 'config/alumni.json';
+	var file = 'data/alumni.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('alumni', obj);
 	});
@@ -45,7 +45,7 @@ router.get('/brothers/alumni', function(req, res, next){
 
 /* GET recruitment page. */
 router.get('/recruitment', function(req, res, next) {
-	var file = 'config/recruitment.json';
+	var file = 'data/recruitment.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('recruitment', obj);
 	});
@@ -66,7 +66,7 @@ router.post('/recruitment', function(req, res, next) {
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-	var file = 'config/contact.json';
+	var file = 'data/contact.json';
 	jsonfile.readFile(file, function(err, obj) {
 		res.render('contact', obj);
 	});
