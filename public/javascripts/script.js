@@ -83,6 +83,7 @@ function foo() {
 }
 
 $(document).ready(function() {
+	if(window.location.pathname === '/') { $('.container-fluid').css('display', 'none').fadeIn(300); }
 	foo();
 
 	$(window).resize(function() {

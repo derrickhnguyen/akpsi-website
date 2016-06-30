@@ -5,19 +5,19 @@ block content
 		-	for (var x = 0; x < alumniBrothers.length; x++)
 			if ((x % 3) === 0)
 				div.row
-					div.col-xs-12.col-sm-4(class='top-space')
+					div.col-xs-12.col-sm-3.col-sm-offset-1(class='top-space testimony')
 						h3(class='remove-margin') #{alumniBrothers[x].name}
 						p (works at #{alumniBrothers[x].work})
 						<em>#{alumniBrothers[x].why}</em>
 						<em>#{alumniBrothers[x].experience}</em>
 					if alumniBrothers[x + 1]
-						div.col-xs-12.col-sm-4(class='top-space')
+						div.col-xs-12.col-sm-3(class='top-space testimony')
 							h3(class='remove-margin') #{alumniBrothers[x + 1].name}
 							p (works at #{alumniBrothers[x + 1].work})
 							<em>#{alumniBrothers[x + 1].why}</em>
 							<em>#{alumniBrothers[x + 1].experience}</em>
 					if alumniBrothers[x + 2]
-						div.col-xs-12.col-sm-4(class='top-space')
+						div.col-xs-12.col-sm-3(class='top-space testimony')
 							h3(class='remove-margin') #{alumniBrothers[x + 2].name}
 							p (works at #{alumniBrothers[x + 2].work})
 							<em>#{alumniBrothers[x + 2].why}</em>

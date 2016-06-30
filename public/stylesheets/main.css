@@ -56,10 +56,6 @@
   margin-top: 55px;
 }
 
-a:hover {
-  color: #8bc4ea;
-  text-decoration: underline;
-}
 
 
 /*------------------------------------------------------------------------------
@@ -93,6 +89,12 @@ h3 {
 .biographies p,
 .quote {
   font-size: 14px;
+}
+
+.testimony {
+  border: 2px solid #bdc3c7;
+  margin-right: 20px;
+  padding: 10px;
 }
 
 .darkbase {
@@ -134,6 +136,11 @@ q {
 a#backtotop {
   color: #000;
   text-decoration: none;
+}
+
+a:hover {
+  color: #8bc4ea;
+  text-decoration: underline;
 }
 
 button.btn.btn-default {
