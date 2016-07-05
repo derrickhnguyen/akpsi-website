@@ -9,25 +9,19 @@ block content
 						h3(class='remove-margin') #{alumniBrothers[x].name}
 						p (works at #{alumniBrothers[x].work})
 						em 
-							q #{alumniBrothers[x].why}
-						em 
-							q #{alumniBrothers[x].experience}
+							q #{alumniBrothers[x].why} #{alumniBrothers[x].experience}
 					if alumniBrothers[x + 1]
 						div.col-xs-12.col-sm-3(class='top-space testimony')
 							h3(class='remove-margin') #{alumniBrothers[x + 1].name}
 							p (works at #{alumniBrothers[x + 1].work})
 							em 
-								q #{alumniBrothers[x + 1].why}
-							em
-								q #{alumniBrothers[x + 1].experience}
+								q #{alumniBrothers[x + 1].why} #{alumniBrothers[x + 1].experience}
 					if alumniBrothers[x + 2]
 						div.col-xs-12.col-sm-3(class='top-space testimony')
 							h3(class='remove-margin') #{alumniBrothers[x + 2].name}
 							p (works at #{alumniBrothers[x + 2].work})
 							em
-								q #{alumniBrothers[x + 2].why}
-							em
-								q #{alumniBrothers[x + 2].experience}
+								q #{alumniBrothers[x + 2].why} #{alumniBrothers[x + 2].experience}
 					
 	include ./includes/backtotop.pug
 	include ./includes/footer.pug

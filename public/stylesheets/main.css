@@ -357,4 +357,8 @@ ul.social li a:hover {
     hr {
       width: 75%;
     }
+
+    .testimony {
+      border: none;
+    }
 }
