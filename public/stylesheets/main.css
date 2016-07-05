@@ -346,6 +346,10 @@ ul.social li a:hover {
       display: none;
     }
 
+    div.container-fluid.social ul.social li {
+      display: none;
+    }
+
     .map-responsive {
       display: none;
     }
