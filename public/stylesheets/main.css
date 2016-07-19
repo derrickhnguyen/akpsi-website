@@ -27,26 +27,6 @@
   margin-bottom: 40px;
 }
 
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.align-center {
-  text-align: center;
-}
-
-.align-right {
-  text-align: right;
-}
-
-.align-left {
-  text-align: left;
-}
-
 .newsletter-email {
   width: 25%;
   margin: 0 auto;
@@ -89,12 +69,6 @@ h3 {
 .biographies p,
 .quote {
   font-size: 14px;
-}
-
-.testimony {
-  border: 2px solid #bdc3c7;
-  margin-right: 20px;
-  padding: 10px;
 }
 
 .darkbase {

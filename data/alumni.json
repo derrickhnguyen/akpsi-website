@@ -13,7 +13,11 @@
 					"major": "Computer Engineering",
 					"why": "I joined AKPsi to expand my network and enrich my college experience, as well as to learn civilian aspects of management and business.",
 					"experience": "AKPsi allowed me to learn different aspects of teamwork and leadership.",
-					"work": "Broadcom"
+					"company": {
+						"name": "Broadcom",
+						"logo": "/assets/images/companies/broadcom.png",
+						"title": "Senior Mask Layout Designer"
+					}
 				},
 				{
 					"name": "Aaron Kim",
@@ -22,7 +26,11 @@
 					"major": "Business Administration - Finance",
 					"why": "I joined AKPsi to meet people who are driven and to not be the typical CSULB commuter.",
 					"experience": "The times spent in GBMs should be used to craft your own influence on people and the direction of meetings. It is so very important to know how you make an impact, especially working with people of all different personalities and backgrounds.",
-					"work": "Raytheon"
+					"company": {
+						"name": "Raytheon",
+						"logo": "/assets/images/companies/raytheon.png",
+						"title": "Program Control Analyst"
+					}
 				},
 				{
 					"name": "Alyssa Nhan",
@@ -31,7 +39,11 @@
 					"major": "Business Administration - Management & Accounting",
 					"why": "I wanted to be part of an organization that would enable me to exercise and further my leadership and business skills.",
 					"experience": "AKPsi has taught me leadership, soft skills, and brotherhood.",
-					"work": "Accenture"
+					"company": {
+						"name": "Accenture",
+						"logo": "/assets/images/companies/accenture.png",
+						"title": "Technology Consulting Senior Analyst"
+					}
 				},
 				{
 					"name": "Kathy Ramirez",
@@ -40,7 +52,11 @@
 					"major": "Studio Art with a minor in Marketing",
 					"why": "I wanted to learn more about the business side of things since I was only going to minor in business and wouldn't be learning a lot outside of my classes. ",
 					"experience": "AKPsi helped me a lot in terms of being able to practice my art. I learned how to design a marketing campaign for rush and then actually apply it. I learned what worked and what didn't and got better over time.",
-					"work": "LA Fashion Week"
+					"company": {
+						"name": "LA Fashion Week",
+						"logo": "/assets/images/companies/lafw.png",
+						"title": "Graphic Design Intern"
+					}
 				},
 				{
 					"name": "Rebecca Sullivan",
@@ -49,7 +65,11 @@
 					"major": "Business Management",
 					"why": "I joined AKPsi because I wanted to make a lasting impact on CSULB. My sister was involved in AKPsi in her university so I knew that we could create a legacy that was a part of something bigger than just our founding chapter.",
 					"experience": "AKPsi taught me how much I love helping others and being a mentor to younger students. It gave me the confidence to market myself as a professional. I attribute many of the internships I held in college and my first full-time job to the experiences I gained in AKPsi.",
-					"work": "Google"
+					"company": {
+						"name": "Google",
+						"logo": "/assets/images/companies/google-logo.png",
+						"title": "Staffing Services Associate"
+					}
 				},
 				{
 					"name": "Bria Beduya",
@@ -58,7 +78,11 @@
 					"major": "Marketing",
 					"why": "As a transfer student I was looking for a way to be meet people and at the same time prepare myself professionally to land a career after graduation.",
 					"experience": "Akpsi has taught me more than I'd ever be able to say thank you for. A lot of soft skill building and it grew my confidence. Taught me to be more ambitious and surround myself with driven people.",
-					"work": "Blizzard"
+					"company": {
+						"name": "Blizzard",
+						"logo": "/assets/images/companies/blizzard.png",
+						"title": "Events Coordinator"
+					}
 				},
 				{
 					"name": "Carin Crayne",
@@ -67,7 +91,11 @@
 					"major": "Marketing",
 					"why": "I joined AKPsi to be more involved on campus and form bonds that will last a lifetime!",
 					"experience": "Professionally it has taught me how to draft resumes and how to develop my interview skills. It has also taught me brotherhood and how to be reliable, so I can always be there for my brothers when they need me most.",
-					"work": "Disney"
+					"company": {
+						"name": "Disney Consumer Products",
+						"logo": "/assets/images/companies/disney.png",
+						"title": "Undergraduate Associate"
+					}
 				}
 			]
 		}

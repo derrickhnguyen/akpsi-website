@@ -2,26 +2,41 @@ extends layout
 
 block content
 	div.container(class='top-bot-space')
-		-	for (var x = 0; x < alumniBrothers.length; x++)
+		-	for (var x = 0; x < alumniBrothers.length; x+=3)
 			if ((x % 3) === 0)
 				div.row
-					div.col-xs-12.col-sm-3.col-sm-offset-1(class='top-space testimony')
-						h3(class='remove-margin') #{alumniBrothers[x].name}
-						p (works at #{alumniBrothers[x].work})
-						em 
-							q #{alumniBrothers[x].why} #{alumniBrothers[x].experience}
+					div.col-xs-12.col-sm-4(class='top-bot-space')
+						div
+							img.img-responsive(src=alumniBrothers[x].company.logo)
+						strong
+							p(class='quote')
+								em
+									q #{alumniBrothers[x].why} #{alumniBrothers[x].experience}
+							p(class='author text-right') - #{alumniBrothers[x].name}, #{alumniBrothers[x].class}
+								br
+								| #{alumniBrothers[x].company.title}, #{alumniBrothers[x].company.name}
 					if alumniBrothers[x + 1]
-						div.col-xs-12.col-sm-3(class='top-space testimony')
-							h3(class='remove-margin') #{alumniBrothers[x + 1].name}
-							p (works at #{alumniBrothers[x + 1].work})
-							em 
-								q #{alumniBrothers[x + 1].why} #{alumniBrothers[x + 1].experience}
+						div.col-xs-12.col-sm-4(class='top-bot-space')
+							div
+								img.img-responsive(src=alumniBrothers[x + 1].company.logo)
+							strong
+								p(class='quote')
+									em
+										q #{alumniBrothers[x + 1].why} #{alumniBrothers[x + 1].experience}
+								p(class='author text-right') - #{alumniBrothers[x + 1].name}, #{alumniBrothers[x + 1].class}
+									br
+									| #{alumniBrothers[x + 1].company.title}, #{alumniBrothers[x + 1].company.name}
 					if alumniBrothers[x + 2]
-						div.col-xs-12.col-sm-3(class='top-space testimony')
-							h3(class='remove-margin') #{alumniBrothers[x + 2].name}
-							p (works at #{alumniBrothers[x + 2].work})
-							em
-								q #{alumniBrothers[x + 2].why} #{alumniBrothers[x + 2].experience}
+						div.col-xs-12.col-sm-4(class='top-bot-space')
+							div
+								img.img-responsive(src=alumniBrothers[x + 2].company.logo)
+							strong
+								p(class='quote')
+									em
+										q #{alumniBrothers[x + 2].why} #{alumniBrothers[x + 2].experience}
+								p(class='author text-right') - #{alumniBrothers[x + 2].name}, #{alumniBrothers[x + 2].class}
+									br
+									| #{alumniBrothers[x + 2].company.title}, #{alumniBrothers[x + 2].company.name}
 					
 	include ./includes/backtotop.pug
 	include ./includes/footer.pug
