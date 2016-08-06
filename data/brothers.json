@@ -54,18 +54,18 @@
 			"order": "text-content-6"
 		},
 		{
-			"name": "Kevin Nguyen",
-			"img": {
-				"sm": "/assets/images/headshots/kevin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/kevin-headshot-lg.jpg"
-			},
-			"order": "text-content-7"
-		},
-		{
 			"name": "Logan Wong",
 			"img": {
 				"sm": "/assets/images/headshots/logan-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/logan-headshot-lg.jpg"
+			},
+			"order": "text-content-7"
+		},
+		{
+			"name": "Michelle Ha",
+			"img": {
+				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
 			},
 			"order": "text-content-8"
 		},
@@ -78,10 +78,10 @@
 			"order": "text-content-9"
 		},
 		{
-			"name": "Michelle Ha",
+			"name": "Metita Tuileata",
 			"img": {
-				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/metita-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/metita-headshot-lg.jpg"
 			},
 			"order": "text-content-10"
 		},
@@ -94,12 +94,20 @@
 			"order": "text-content-11"
 		},
 		{
+			"name": "Timothy Chau",
+			"img": {
+				"sm": "/assets/images/headshots/tim-chau-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/tim-chau-headshot-lg.jpg"
+			},
+			"order": "text-content-12"
+		},
+		{
 			"name": "Victor Vo",
 			"img": {
 				"sm": "/assets/images/headshots/victor-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
 			},
-			"order": "text-content-12"
+			"order": "text-content-13"
 		},
 		{
 			"name": "Vu Nguyen",
@@ -107,7 +115,7 @@
 				"sm": "/assets/images/headshots/vu-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/vu-headshot-lg.jpg"
 			},
-			"order": "text-content-13"
+			"order": "text-content-14"
 		}
 	],
 	"notPictured": [
@@ -118,19 +126,10 @@
 			"name": "Kelsey Yonemura"
 		},
 		{
-			"name": "Metita Tuileata"
-		},
-		{
 			"name": "Shaina Williams"
 		},
 		{
-			"name": "Timothy Chau"
-		},
-		{
 			"name": "Tim Han"
-		},
-		{
-			"name": "Vivian To"
 		}
 	],
 	"pathname": "/brothers"
