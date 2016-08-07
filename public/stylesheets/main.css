@@ -142,7 +142,6 @@ button.btn.btn-default:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
   position: relative;
   width: 100%;
-  height: 100%;
 }
 
 .navbar {
