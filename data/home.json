@@ -1,8 +1,8 @@
-  	{
-  		"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-home.jpg",
-  		"backgroundPosition": "center",
-  		"header": "ALPHA KAPPA PSI",
-  		"subheader": "Shaping People, Shaping Business",
-  		"height": "100%",
-  		"pathname": "/"
-  	}
+{
+	"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-home.jpg",
+	"backgroundPosition": "center",
+	"header": "ALPHA KAPPA PSI",
+	"subheader": "Shaping People, Shaping Business",
+	"height": "100%",
+	"pathname": "/"
+}

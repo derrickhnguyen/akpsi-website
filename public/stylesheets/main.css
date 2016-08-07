@@ -12,7 +12,10 @@
 ------------------------------ GENERAL CONTENT ---------------------------------
 ------------------------------------------------------------------------------*/
 html,
-body { height: 100%; }
+body { 
+  height: 100%;
+  width: 100%; 
+}
 
 .top-space {  
   position: relative;      
@@ -144,10 +147,7 @@ button.btn.btn-default:hover {
   width: 100%;
 }
 
-.navbar {
-  z-index: 9999;
-}
-
+.navbar { z-index: 9999; }
 .navbar-nav li a,
 .navbar-nav li.dropdown ul.dropdown-menu li a,
 .navbar-header .navbar-brand {
@@ -191,7 +191,12 @@ button.btn.btn-default:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) }
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
   
 div.container-fluid.social {
   position: absolute;
