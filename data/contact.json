@@ -3,6 +3,6 @@
 			"backgroundPosition": "bottom",
 			"header": "Contact Us",
 			"subheader": "We love hearing from you.",
-			"height": "60vh",
+			"height": "60&",
 			"pathname": "/contact"
 		}

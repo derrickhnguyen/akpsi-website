@@ -3,6 +3,6 @@
   		"backgroundPosition": "center",
   		"header": "ALPHA KAPPA PSI",
   		"subheader": "Shaping People, Shaping Business",
-  		"height": "100vh",
+  		"height": "100%",
   		"pathname": "/"
   	}

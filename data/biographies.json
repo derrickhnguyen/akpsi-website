@@ -3,7 +3,7 @@
 			"backgroundPosition": "bottom",
 			"header": "LEARN MORE",
 			"subheader": "About the Brothers",
-			"height": "60vh",
+			"height": "60%",
 			"activeBrothers": [
 				{
 					"name": "Austin Yao",
