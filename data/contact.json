@@ -1,6 +1,9 @@
 {
+	"title": "Contact | CSULB AKPSI",
 	"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-contact.jpg",
-	"backgroundPosition": "bottom",
+	"imgWidth": "1920",
+	"imgHeight": "700",
+	"backgroundPosition": "top",
 	"header": "Contact Us",
 	"subheader": "We love hearing from you.",
 	"height": "60%",

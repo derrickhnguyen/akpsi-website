@@ -1,5 +1,8 @@
 {
+	"title": "About | CSULB AKPSI",
 	"parallaxUrl": "/assets/images/banners/akpsi-delta-omicron-chapter-csulb-about.jpg",
+	"imgWidth": "1920",
+	"imgHeight": "800",
 	"backgroundPosition": "top",
 	"header": "LEARN MORE",
 	"subheader": "About the Fraternity and Chapter",
