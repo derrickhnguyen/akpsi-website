@@ -10,7 +10,7 @@ html(lang='en')
 		meta(name='author', content='Derrick Nguyen')
 		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-			
+		
 		include ./includes/styles
 
 	body(class='montserrat')
@@ -64,3 +64,13 @@ html(lang='en')
 										i.fa.fa-twitter.fa-lg
 
 		block content
+
+		if pathname === '/'
+			include ./includes/scripts.pug
+		else if pathname === '/contact'
+			include ./includes/footer.pug
+			include ./includes/scripts.pug
+		else
+			include ./includes/backtotop.pug
+			include ./includes/footer.pug
+			include ./includes/scripts.pug

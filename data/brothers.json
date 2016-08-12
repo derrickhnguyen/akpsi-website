@@ -57,12 +57,20 @@
 			"order": "text-content-6"
 		},
 		{
+			"name": "Kevin Nguyen",
+			"img": {
+				"sm": "/assets/images/headshots/kevin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/kevin-headshot-lg.jpg"
+			},
+			"order": "text-content-7"
+		},
+		{
 			"name": "Logan Wong",
 			"img": {
 				"sm": "/assets/images/headshots/logan-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/logan-headshot-lg.jpg"
 			},
-			"order": "text-content-7"
+			"order": "text-content-8"
 		},
 		{
 			"name": "Michelle Ha",
@@ -70,7 +78,7 @@
 				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
 			},
-			"order": "text-content-8"
+			"order": "text-content-9"
 		},
 		{
 			"name": "Melissa Thai",
@@ -78,21 +86,13 @@
 				"sm": "/assets/images/headshots/melissa-2015-sm.jpg",
 				"lg": "/assets/images/headshots/melissa-2015-lg.jpg"
 			},
-			"order": "text-content-9"
+			"order": "text-content-10"
 		},
 		{
 			"name": "Metita Tuileata",
 			"img": {
 				"sm": "/assets/images/headshots/metita-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/metita-headshot-lg.jpg"
-			},
-			"order": "text-content-10"
-		},
-		{
-			"name": "Rose Solis",
-			"img": {
-				"sm": "/assets/images/headshots/rose-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/rose-headshot-lg.jpg"
 			},
 			"order": "text-content-11"
 		},
@@ -111,14 +111,6 @@
 				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
 			},
 			"order": "text-content-13"
-		},
-		{
-			"name": "Vu Nguyen",
-			"img": {
-				"sm": "/assets/images/headshots/vu-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/vu-headshot-lg.jpg"
-			},
-			"order": "text-content-14"
 		}
 	],
 	"notPictured": [

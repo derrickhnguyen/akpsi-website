@@ -22,8 +22,8 @@ block content
 				p 
 					b Not pictured:
 					- for (var x = 0; x < notPictured.length; x++)
-						|  #{notPictured[x].name},
+						if x === notPictured.length - 1
+							|  #{notPictured[x].name}
+						else
+							|  #{notPictured[x].name},
 
-	include ./includes/backtotop.pug
-	include ./includes/footer.pug
-	include ./includes/scripts.pug
