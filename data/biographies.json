@@ -68,6 +68,16 @@
 			"why": "To develop professional and public speaking skills.",
 			"fact": "Hiking, Star gazing, Doodling, Sewing."
 		},
+ 		{
+ 			"name": "Kevin Nguyen",
+ 			"img": "/assets/images/headshots/kevin-headshot-sm.jpg",
+ 			"class": "Epsilon",
+ 			"position": "",
+ 			"year": "Fall 2016",
+ 			"major": "Business Management",
+ 			"why": "I joined AKPsi mainly for the reasons of networking and improving upon my public speaking skills.",
+ 			"fact": "I like to hike, swim and have foodventures."
+ 		},
 		{
 			"name": "Logan Wong",
 			"img": "/assets/images/headshots/logan-headshot-sm.jpg",
