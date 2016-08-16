@@ -57,12 +57,20 @@
 			"order": "text-content-6"
 		},
 		{
+			"name": "Kelsey Yonemura",
+			"img": {
+				"sm": "/assets/images/headshots/kelsey-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/kelsey-headshot-lg.jpg"
+			},
+			"order": "text-content-7"
+		},
+		{
 			"name": "Kevin Nguyen",
 			"img": {
 				"sm": "/assets/images/headshots/kevin-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/kevin-headshot-lg.jpg"
 			},
-			"order": "text-content-7"
+			"order": "text-content-8"
 		},
 		{
 			"name": "Logan Wong",
@@ -70,7 +78,7 @@
 				"sm": "/assets/images/headshots/logan-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/logan-headshot-lg.jpg"
 			},
-			"order": "text-content-8"
+			"order": "text-content-9"
 		},
 		{
 			"name": "Michelle Ha",
@@ -78,7 +86,7 @@
 				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
 			},
-			"order": "text-content-9"
+			"order": "text-content-10"
 		},
 		{
 			"name": "Melissa Thai",
@@ -86,7 +94,7 @@
 				"sm": "/assets/images/headshots/melissa-2015-sm.jpg",
 				"lg": "/assets/images/headshots/melissa-2015-lg.jpg"
 			},
-			"order": "text-content-10"
+			"order": "text-content-11"
 		},
 		{
 			"name": "Metita Tuileata",
@@ -94,7 +102,7 @@
 				"sm": "/assets/images/headshots/metita-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/metita-headshot-lg.jpg"
 			},
-			"order": "text-content-11"
+			"order": "text-content-12"
 		},
 		{
 			"name": "Timothy Chau",
@@ -102,7 +110,7 @@
 				"sm": "/assets/images/headshots/tim-chau-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/tim-chau-headshot-lg.jpg"
 			},
-			"order": "text-content-12"
+			"order": "text-content-13"
 		},
 		{
 			"name": "Victor Vo",
@@ -110,15 +118,12 @@
 				"sm": "/assets/images/headshots/victor-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
 			},
-			"order": "text-content-13"
+			"order": "text-content-14"
 		}
 	],
 	"notPictured": [
 		{
 			"name": "Alain Lopez"
-		},
-		{
-			"name": "Kelsey Yonemura"
 		},
 		{
 			"name": "Shaina Williams"
