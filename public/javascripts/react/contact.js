@@ -148,9 +148,8 @@ const Msg = React.createClass({
 			return (
 				<div className="alert alert-danger col-xs-12">
 					<span 
-						className="badge delete-btn"
+						className="glyphicon glyphicon-remove delete-btn"
 						onClick={this.props.closeMsg}>
-						close
 					</span>
 					{this.props.errorMsg}
 				</div>
@@ -159,9 +158,8 @@ const Msg = React.createClass({
 			return (
 				<div className="alert alert-success col-xs-12">
 					<span 
-						className="badge delete-btn"
+						className="glyphicon glyphicon-remove delete-btn"
 						onClick={this.props.closeMsg}>
-						close
 					</span>
 					{this.props.acceptMsg}
 				</div>
