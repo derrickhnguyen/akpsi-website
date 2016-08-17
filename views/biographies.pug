@@ -4,11 +4,11 @@ block content
 	.container(class='top-bot-space')
 			- for(var x = 0 ; x < activeBrothers.length; x+=2)
 				if ((x % 2) === 0)
-					div.row(class='top-space')
+					div.row(class='top-space-sm')
 						div.col-xs-12.col-sm-3(class='text-center')
 							h3 #{activeBrothers[x].name}
 							img.img-responsive(src=activeBrothers[x].img, alt=activeBrothers[x].name)
-						div.col-xs-12.col-sm-3(class='biographies')
+						div.col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0(class='biographies')
 							p <strong>Class</strong>: #{activeBrothers[x].class}
 							P <strong>Position(s)</strong>: #{activeBrothers[x].position}
 							p <strong>Year of Graduation</strong>: #{activeBrothers[x].year}
@@ -19,7 +19,7 @@ block content
 							div.col-xs-12.col-sm-3(class='text-center')
 								h3 #{activeBrothers[x + 1].name}
 								img.img-responsive(src=activeBrothers[x + 1].img, alt=activeBrothers[x + 1].name)
-							div.col-xs-12.col-sm-3(class='biographies')
+							div.col-xs-10.col-xs-offset-1.col-sm-3.col-sm-offset-0(class='biographies')
 								p <strong>Class</strong>: #{activeBrothers[x + 1].class}
 								P <strong>Position(s)</strong>: #{activeBrothers[x + 1].position}
 								p <strong>Year of Graduation</strong>: #{activeBrothers[x + 1].year}

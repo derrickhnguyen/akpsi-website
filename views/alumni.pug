@@ -5,7 +5,7 @@ block content
 		-	for (var x = 0; x < alumniBrothers.length; x+=3)
 			if ((x % 3) === 0)
 				div.row
-					div.col-xs-12.col-sm-4(class='top-bot-space')
+					div.col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0(class='top-bot-space-sm')
 						div
 							img.img-responsive(src=alumniBrothers[x].company.logo)
 						strong
@@ -16,7 +16,7 @@ block content
 								br
 								| #{alumniBrothers[x].company.title}, #{alumniBrothers[x].company.name}
 					if alumniBrothers[x + 1]
-						div.col-xs-12.col-sm-4(class='top-bot-space')
+						div.col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0(class='top-bot-space-sm')
 							div
 								img.img-responsive(src=alumniBrothers[x + 1].company.logo)
 							strong
@@ -27,7 +27,7 @@ block content
 									br
 									| #{alumniBrothers[x + 1].company.title}, #{alumniBrothers[x + 1].company.name}
 					if alumniBrothers[x + 2]
-						div.col-xs-12.col-sm-4(class='top-bot-space')
+						div.col-xs-10.col-xs-offset-1.col-sm-4.col-sm-offset-0(class='top-bot-space-sm')
 							div
 								img.img-responsive(src=alumniBrothers[x + 2].company.logo)
 							strong

@@ -2,7 +2,7 @@ extends layout
 
 block content
 	div.container(class='top-bot-space text-center')
-		div.row(class='top-space')
+		div.row(class='top-space-sm')
 			- for (var x = 0; x < activeBrothers.length; x++)
 				if ((x % 4) === 0)
 					div.col-xs-6.col-sm-3.col-lg-2.col-lg-offset-2
@@ -17,7 +17,7 @@ block content
 								img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
 								span(class=activeBrothers[x].order) #{activeBrothers[x].name}
 
-		div.row.top-space
+		div.row.top-space-sm
 			div.col-xs-6.col-xs-offset-3
 				p 
 					b Not pictured:
