@@ -73,7 +73,7 @@ router.get('/contact', function(req, res, next) {
 });
 
 /* POST information from contact page. */
-router.post('/contact/', function(req, res, next) {
+router.post('/contact', function(req, res, next) {
 	var newMessage = ContactMessages({
 		name: req.body.fullName,
 		email: req.body.email,
