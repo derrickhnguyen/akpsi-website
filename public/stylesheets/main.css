@@ -138,11 +138,6 @@ opacity: 0.8;
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
 .parallax-window {
-background: -o-linear-gradient(bottom, black, transparent); 
-background: -webkit-linear-gradient(bottom, black, transparent);
-background: -ms-linear-gradient(bottom, black, transparent);
-background: -moz-linear-gradient(bottom, black, transparent);
-background: linear-gradient(bottom, black, transparent);
 position: relative;
 width: 100%;
 }
