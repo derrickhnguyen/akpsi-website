@@ -275,6 +275,12 @@ ul.social li a:hover {
 opacity: 0.8;
 }
 
+.delete-btn { float: right; }
+.delete-btn:hover { 
+opacity: 0.6; 
+cursor: pointer;
+}
+
 #footer { background-color: #bdc3c7; }
 
 

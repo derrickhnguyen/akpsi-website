@@ -38,17 +38,9 @@ block content
 			div.col-xs-12-
 				p 
 					em Click <a href="/brothers/alumni" class='lightbase'>here</a> to see more testimonies
-
-		div.row(class='text-center')
-			div.col-md-12(class='top-bot-space')
-				h4
-					strong Applications for Fall 2016 Recruitment are coming soon
-				p
-					i Sign up for our mailing list! We'll keep you updated!
-				form(method='POST', action='/recruitment', role='form')
-					div.form-group
-						input.form-control(class='newsletter-email', type='email', name='email', autocomplete='off' placeholder='Enter your email here')
-					button.btn.btn-default(type='submit') Submit
+					
+		div(id='react-recruitment')
+		script(type="text/babel" src="/assets/javascripts/recruitment.js")
 
 		div.row(class='top-bot-space')
 			div.col-md-12(class='text-center')
