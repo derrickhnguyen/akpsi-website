@@ -5,20 +5,20 @@ block content
 		div.row(class='top-space')
 			- for (var x = 0; x < activeBrothers.length; x++)
 				if ((x % 4) === 0)
-					div.col-md-2.col-md-offset-2.col-sm-3.col-xs-6
+					div.col-xs-6.col-sm-3.col-lg-2.col-lg-offset-2
 						div
 							a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
 								img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
 								span(class=activeBrothers[x].order) #{activeBrothers[x].name}
 				else 
-					div.col-md-2.col-sm-3.col-xs-6
+					div.col-xs-6.col-sm-3.col-lg-2
 						div
 							a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
 								img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
 								span(class=activeBrothers[x].order) #{activeBrothers[x].name}
 
 		div.row.top-space
-			div.col-md-6.col-md-offset-3
+			div.col-xs-6.col-xs-offset-3
 				p 
 					b Not pictured:
 					- for (var x = 0; x < notPictured.length; x++)

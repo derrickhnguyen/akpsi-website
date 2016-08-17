@@ -19,18 +19,18 @@ width: 100%;
 
 .top-space {  
 position: relative;      
-margin-top: 40px;
+margin-top: 50px;
 }
 
 .bottom-space {
 position: relative;  
-margin-bottom: 40px;      
+margin-bottom: 50px;      
 }                             
 
 .top-bot-space {
 position: relative;       
-margin-top: 40px;
-margin-bottom: 40px;
+margin-top: 50px;
+margin-bottom: 50px;
 }
 
 .newsletter-email {
@@ -138,12 +138,11 @@ opacity: 0.8;
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
 .parallax-window {
-background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background-image: -moz-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background-image: -o-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background-image: -webkit-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+background: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)); 
+background: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+background: -ms-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+background: -moz-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
 position: relative;
 width: 100%;
 }
@@ -192,22 +191,22 @@ margin: 0;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);
 -moz-transform: translate(-50%, -50%);
 -o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
 
 div.container-fluid.social {
 position: absolute;
 top: 90%;
 left: 50%;
-transform: translate(-50%, -50%);
 -ms-transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);
 -moz-transform: translate(-50%, -50%);
 -o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
 }
 
 div.container-fluid.social ul.social li {
@@ -281,6 +280,7 @@ ul.social li a:hover {
 opacity: 0.8;
 }
 
+#footer { background-color: #bdc3c7; }
 
 
 /*------------------------------------------------------------------------------
