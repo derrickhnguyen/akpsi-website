@@ -6,7 +6,7 @@ var filesize = require('gulp-filesize');
 var cleanCSS = require('gulp-clean-css');
 var watch = require('gulp-watch');
 
-var js = ['./public/javascripts/bootstrap.js', './public/javascripts/lightbox.js', './public/javascripts/parallax.js', './public/javascripts/script.js'];
+var js = ['./public/javascripts/*.js'];
 var css = ['./public/stylesheets/*.css'];
 
 gulp.task('concatJS', function() {
