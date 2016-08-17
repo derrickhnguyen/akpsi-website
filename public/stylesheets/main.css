@@ -52,7 +52,7 @@ font-size: 16px;
 }
 
 h1 {
-font-size: 56px;
+font-size: 72px;
 }
 
 h2 {
@@ -138,11 +138,11 @@ opacity: 0.8;
 -------------------------- HEADER & NAVIGATION ---------------------------------
 ------------------------------------------------------------------------------*/
 .parallax-window {
-background: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)); 
-background: -webkit-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background: -ms-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background: -moz-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+background: -o-linear-gradient(bottom, black, transparent); 
+background: -webkit-linear-gradient(bottom, black, transparent);
+background: -ms-linear-gradient(bottom, black, transparent);
+background: -moz-linear-gradient(bottom, black, transparent);
+background: linear-gradient(bottom, black, transparent);
 position: relative;
 width: 100%;
 }
