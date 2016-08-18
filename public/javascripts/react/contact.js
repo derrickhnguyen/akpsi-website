@@ -59,7 +59,7 @@ const App = React.createClass({
 	render: function() {
 		return (
 			<div>
-				<Msg 
+				<Msg
 					errorMsg={this.state.errorMsg} 
 					acceptMsg={this.state.acceptMsg}
 					closeMsg={() => this.closeMsg()} />

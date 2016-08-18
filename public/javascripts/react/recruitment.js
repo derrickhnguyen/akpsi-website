@@ -33,7 +33,7 @@ const App = React.createClass({
 	render: function() {
 		return (
 			<div className="row text-center">
-				<div className="col-md-12 top-bot-space">
+				<div className="col-xs-10 col-xs-offset-1 col-md-12 col-md-offset-0 top-bot-space-sm">
 					<h4><strong>Applications for Fall 2016 Recruitment are coming soon</strong></h4>
 					<p><i>Sign up for our mailing list! We'll keep you updated!</i></p>
 					<Msg closeMsg={() => this.closeMsg()} errMsg={this.state.errMsg} acceptedMsg={this.state.acceptedMsg} />
