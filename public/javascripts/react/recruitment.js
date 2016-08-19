@@ -43,7 +43,6 @@ const App = React.createClass({
 		);
 	}
 });
-
 const EmailInput = React.createClass({
 	handleChange: function(e) {
 		this.props.onChange(e.target.value);
@@ -71,7 +70,6 @@ const EmailInput = React.createClass({
 		);
 	}
 });
-
 const Msg = React.createClass({
 	render: function() {
 		if(this.props.errMsg) {
@@ -97,7 +95,6 @@ const Msg = React.createClass({
 		} else return <div />
 	}
 })
-
 ReactDOM.render(
 	<App />,
 	document.getElementById('react-recruitment')
