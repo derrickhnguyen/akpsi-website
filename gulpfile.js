@@ -7,8 +7,8 @@ var cleanCSS = require('gulp-clean-css');
 var watch = require('gulp-watch');
 
 var js = ['./public/javascripts/*.js'];
-var contactJs = ['./public/javascripts/react/min/contact.js'];
-var recruitmentJs = ['./public/javascripts/react/min/recruitment.js']
+var contactJs = ['./public/javascripts/react/plain/contact.js'];
+var recruitmentJs = ['./public/javascripts/react/plain/recruitment.js']
 var css = ['./public/stylesheets/*.css'];
 
 gulp.task('concatJS', function() {
@@ -30,7 +30,7 @@ gulp.task('concatCSS', function() {
 
 gulp.task('concatContactJS', function() {
 	return gulp.src(contactJs)
-		.pipe(concat('contactVendor.js'))
+		.pipe(concat('contact.js'))
 		.pipe(uglify())
 		.pipe(filesize())
 		.pipe(gulp.dest('./public/javascripts/react/min/'))
@@ -39,7 +39,7 @@ gulp.task('concatContactJS', function() {
 
 gulp.task('concatRecruitmentJS', function() {
 	return gulp.src(recruitmentJs)
-		.pipe(concat('recruitmentVendor.js'))
+		.pipe(concat('recruitment.js'))
 		.pipe(uglify())
 		.pipe(filesize())
 		.pipe(gulp.dest('./public/javascripts/react/min/'))
