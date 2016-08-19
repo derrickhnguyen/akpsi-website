@@ -45,7 +45,8 @@ html(lang='en')
 							li.active
 								a(href='/contact') CONTACT
 			div.title(class='text-center open-sans')
-				h1 #{header}
+				h1 
+					b #{header}
 				h2 #{subheader}
 
 			if pathname === '/'
@@ -70,15 +71,15 @@ html(lang='en')
 		else if pathname === '/contact'
 			include ./includes/footer.pug
 			include ./includes/scripts.pug
-			<script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
-			<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script>
+			script(src="https://npmcdn.com/react@15.3.0/dist/react.min.js")
+			script(src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js")
 			script(type='text/javascript' src='/assets/javascripts/react/min/contact.js')
 		else if pathname === '/recruitment'
 			include ./includes/backtotop.pug
 			include ./includes/footer.pug
 			include ./includes/scripts.pug		
-			<script src="https://npmcdn.com/react@15.3.0/dist/react.min.js"></script>
-			<script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js"></script>
+			script(src="https://npmcdn.com/react@15.3.0/dist/react.min.js")
+			script(src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js")
 			script(type='text/javascript' src='/assets/javascripts/react/min/recruitment.js')
 		else
 			include ./includes/backtotop.pug

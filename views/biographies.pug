@@ -13,6 +13,8 @@ block content
 							P <strong>Position(s)</strong>: #{activeBrothers[x].position}
 							p <strong>Year of Graduation</strong>: #{activeBrothers[x].year}
 							p <strong>Major</strong>: #{activeBrothers[x].major}
+							if activeBrothers[x].minor
+								p <strong>Minor</strong>: #{activeBrothers[x].minor}
 							p <strong>Why did you join AKPsi</strong>: #{activeBrothers[x].why}
 							p <strong>Hobbies/Fun Facts</strong>: #{activeBrothers[x].fact} 
 						if activeBrothers[x + 1]
@@ -24,5 +26,7 @@ block content
 								P <strong>Position(s)</strong>: #{activeBrothers[x + 1].position}
 								p <strong>Year of Graduation</strong>: #{activeBrothers[x + 1].year}
 								p <strong>Major</strong>: #{activeBrothers[x + 1].major}
+								if activeBrothers[x + 1].minor
+									p <strong>Minor</strong>: #{activeBrothers[x + 1].minor}
 								p <strong>Why did you join AKPsi</strong>: #{activeBrothers[x + 1].why}
 								p <strong>Hobbies/Fun Facts</strong>: #{activeBrothers[x + 1].fact}
