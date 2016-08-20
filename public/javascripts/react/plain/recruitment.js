@@ -49,7 +49,7 @@ var App = React.createClass({
 					React.createElement(
 						"strong",
 						null,
-						"Applications for Fall 2016 Recruitment are coming soon"
+						"Applications for Fall 2016 Recruitment is here"
 					)
 				),
 				React.createElement(
