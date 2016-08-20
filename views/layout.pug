@@ -75,11 +75,11 @@ html(lang='en')
 							p USU 305
 							p Business Attire
 							p *By appointment only
-
-			div.title(class='text-center open-sans')
-				h1 
-					b #{header}
-				h2 #{subheader}
+			else 
+				div.title(class='text-center open-sans')
+					h1 
+						b #{header}
+					h2 #{subheader}
 
 			if pathname === '/'
 				div.container-fluid.social

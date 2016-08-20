@@ -7,6 +7,7 @@
 	"header": "LEARN MORE",
 	"subheader": "About the Brothers",
 	"height": "60%",
+	"pathname": "/brothers/biographies",
 	"activeBrothers": [
 		{
 			"name": "Austin Yao",
