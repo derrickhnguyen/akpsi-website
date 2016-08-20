@@ -43,42 +43,14 @@ html(lang='en')
 							li.active
 								a(href='/recruitment') RECRUITMENT
 							li.active
-								a(href='/contact') CONTACT
+								a(href='/contact') CONTACT 
 
-			if pathname === '/recruitment'
-				div.title(class='text-center open-sans top-space-sm')
-					div.row
-						div.col-sm-4
-							h2 Info Night
-							p Thursday, 9/1 @ 7PM
-							p USU 253 - Alamitos Bay Room
-							p Casual Attire
-						div.col-sm-4
-							h2 Meet The Brothers
-							p Tuesday, 9/6 @ 7PM
-							p Outside Coffee Bean
-							p Casual Attire
-						div.col-sm-4
-							h2 Alumni Coffee Talk
-							p Thursday, 9/8 @ 7PM
-							p USU 253 - Alamitos Bay Room
-							p Business Casual
-					div.row
-						div.col-sm-4.col-sm-offset-2
-							h2 Bowling social
-							p Wednesday, 9/7 @ 7PM
-							p USU Bowling Alley
-							p Casual Attire
-						div.col-sm-4
-							h2 Interviews
-							p Friday, 9/9 - Saturday, 9/10
-							p USU 305
-							p Business Attire
-							p *By appointment only
-			else 
-				div.title(class='text-center open-sans')
-					h1 
-						b #{header}
+			div.title(class='text-center open-sans')
+				h1 
+					b #{header}
+				if pathname === '/recruitment'
+					h2 View the schedule <a target="_blank" href='/assets/images/fall-2016-rush-schedule.jpg' style='color:#3498db;'>here</a>
+				else 
 					h2 #{subheader}
 
 			if pathname === '/'
