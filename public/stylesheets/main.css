@@ -136,10 +136,8 @@ color: #000;
 text-decoration: none;
 }
 
-a:hover {
-color: #8bc4ea;
-text-decoration: underline;
-}
+a { color: #3498db; }
+a:hover { text-decoration: underline; }
 
 button.btn.btn-default {
 background-color: #f1c40f;

@@ -12,7 +12,7 @@ block content
 							p(class='quote')
 								em
 									q #{alumniBrothers[x].why} #{alumniBrothers[x].experience}
-							p(class='author text-right') - #{alumniBrothers[x].name}, #{alumniBrothers[x].class}
+							p(class='author text-right') - <a target='_blank' href=#{alumniBrothers[x].linkedin}>#{alumniBrothers[x].name}</a>, #{alumniBrothers[x].class}
 								br
 								| #{alumniBrothers[x].company.title}, #{alumniBrothers[x].company.name}
 					if alumniBrothers[x + 1]
@@ -23,7 +23,7 @@ block content
 								p(class='quote')
 									em
 										q #{alumniBrothers[x + 1].why} #{alumniBrothers[x + 1].experience}
-								p(class='author text-right') - #{alumniBrothers[x + 1].name}, #{alumniBrothers[x + 1].class}
+								p(class='author text-right') - <a target='_blank' href=#{alumniBrothers[x + 1].linkedin}>#{alumniBrothers[x + 1].name}</a>, #{alumniBrothers[x + 1].class}
 									br
 									| #{alumniBrothers[x + 1].company.title}, #{alumniBrothers[x + 1].company.name}
 					if alumniBrothers[x + 2]
@@ -34,7 +34,7 @@ block content
 								p(class='quote')
 									em
 										q #{alumniBrothers[x + 2].why} #{alumniBrothers[x + 2].experience}
-								p(class='author text-right') - #{alumniBrothers[x + 2].name}, #{alumniBrothers[x + 2].class}
+								p(class='author text-right') - <a target='_blank' href=#{alumniBrothers[x + 2].linkedin}>#{alumniBrothers[x + 2].name}</a>, #{alumniBrothers[x + 2].class}
 									br
 									| #{alumniBrothers[x + 2].company.title}, #{alumniBrothers[x + 2].company.name}
 
