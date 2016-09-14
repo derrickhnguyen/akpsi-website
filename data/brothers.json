@@ -114,12 +114,20 @@
 			"order": "text-content-13"
 		},
 		{
+			"name": "Timothy Han",
+			"img": {
+				"sm": "/assets/images/headshots/tim-han-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/tim-han-headshot-lg.jpg"
+			},
+			"order": "text-content-14"
+		},
+		{
 			"name": "Victor Vo",
 			"img": {
 				"sm": "/assets/images/headshots/victor-headshot-sm.jpg",
 				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
 			},
-			"order": "text-content-14"
+			"order": "text-content-15"
 		}
 	],
 	"notPictured": [
@@ -131,9 +139,6 @@
 		},
 		{
 			"name": "Shaina Williams"
-		},
-		{
-			"name": "Tim Han"
 		}
 	],
 	"pathname": "/brothers"
