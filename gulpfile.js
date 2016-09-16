@@ -49,8 +49,6 @@ gulp.task('concatRecruitmentJS', function() {
 gulp.task('watch', function(cb) {
 	gulp.watch(js, ['concatJS']);
 	gulp.watch(css, ['concatCSS']);
-	gulp.watch(contactJs, ['concatContactJS']);
-	gulp.watch(recruitmentJs, ['concatRecruitmentJS']);
 });
 
-gulp.task('default', ['concatJS', 'concatCSS', 'concatContactJS', 'concatRecruitmentJS', 'watch']);
+gulp.task('default', ['concatJS', 'concatCSS', 'watch']);

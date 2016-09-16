@@ -11,7 +11,7 @@
 	"activeBrothers": [
 		{
 			"name": "Austin Yao",
-			"img": "/assets/images/headshots/austin-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/austin-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "Master of Rituals",
 			"year": "Spring 2018",
@@ -21,7 +21,7 @@
 		},
 		{
 			"name": "Branden Saito",
-			"img": "/assets/images/headshots/branden-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/branden-headshot-sm.jpg",
 			"class": "Delta",
 			"position": "President",
 			"year": "Spring 2017",
@@ -31,7 +31,7 @@
 		},
 		{
 			"name": "Darrin Nguyen",
-			"img": "/assets/images/headshots/darrin-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/darrin-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "VP of Membership",
 			"year": "Fall 2018",
@@ -42,7 +42,7 @@
 		},
 		{
 			"name": "Denny Co",
-			"img": "/assets/images/headshots/denny-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/denny-headshot-sm.jpg",
 			"class": "Epsilon",
 			"position": "Inter-chapter Chair",
 			"year": "Fall 2017",
@@ -52,7 +52,7 @@
 		},
 		{
 			"name": "Derrick Nguyen",
-			"img": "/assets/images/headshots/derrick-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/derrick-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "VP of Alumni Relations, Webmaster",
 			"year": "Spring 2018",
@@ -62,7 +62,7 @@
 		},
 		{
 			"name": "Eileen Tran",
-			"img": "/assets/images/headshots/eileen-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/eileen-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "Secretary",
 			"year": "Fall 2017",
@@ -73,7 +73,7 @@
 		},
  		{
  			"name": "Kevin Nguyen",
- 			"img": "/assets/images/headshots/kevin-headshot-sm.jpg",
+ 			"img": "/assets/images/headshots/min/kevin-headshot-sm.jpg",
  			"class": "Epsilon",
  			"position": "Active Member",
  			"year": "Fall 2016",
@@ -83,7 +83,7 @@
  		},
 		{
 			"name": "Logan Wong",
-			"img": "/assets/images/headshots/logan-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/logan-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "VP of Administration, Pledge Parent",
 			"year": "Fall 2018",
@@ -94,7 +94,7 @@
 		},
 		{
 			"name": "Melissa Thai",
-			"img": "/assets/images/headshots/melissa-2015-sm.jpg",
+			"img": "/assets/images/headshots/min/melissa-2015-sm.jpg",
 			"class": "Epsilon",
 			"position": "Retreat Chair",
 			"year": "Spring 2018",
@@ -104,7 +104,7 @@
 		},
 		{
 			"name": "Michella Ha",
-			"img": "/assets/images/headshots/michelle-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/michelle-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "Historian, Pledge Parent",
 			"year": "Spring 2018",
@@ -115,7 +115,7 @@
 		},
 		{
 			"name": "Victor Vo",
-			"img": "/assets/images/headshots/victor-headshot-sm.jpg",
+			"img": "/assets/images/headshots/min/victor-headshot-sm.jpg",
 			"class": "Zeta",
 			"position": "Active Member",
 			"year": "Spring 2018",

@@ -12,120 +12,120 @@
 		{
 			"name": "Austin Yao",
 			"img": {
-				"sm": "/assets/images/headshots/austin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/austin-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/austin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/austin-headshot-lg.jpg"
 			},
 			"order": "text-content-1"
 		},
 		{
 			"name": "Branden Saito",
 			"img": {
-				"sm": "/assets/images/headshots/branden-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/branden-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/branden-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/branden-headshot-lg.jpg"
 			},
 			"order": "text-content-2"
 		},
 		{
 			"name": "Darrin Nguyen",
 			"img": {
-				"sm": "/assets/images/headshots/darrin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/darrin-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/darrin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/darrin-headshot-lg.jpg"
 			},
 			"order": "text-content-3"
 		},
 		{
 			"name": "Denny Co",
 			"img": {
-				"sm": "/assets/images/headshots/denny-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/denny-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/denny-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/denny-headshot-lg.jpg"
 			},
 			"order": "text-content-4"
 		},
 		{
 			"name": "Derrick Nguyen",
 			"img": {
-				"sm": "/assets/images/headshots/derrick-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/derrick-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/derrick-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/derrick-headshot-lg.jpg"
 			},
 			"order": "text-content-5"
 		},
 		{
 			"name": "Eileen Tran",
 			"img": {
-				"sm": "/assets/images/headshots/eileen-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/eileen-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/eileen-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/eileen-headshot-lg.jpg"
 			},
 			"order": "text-content-6"
 		},
 		{
 			"name": "Kelsey Yonemura",
 			"img": {
-				"sm": "/assets/images/headshots/kelsey-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/kelsey-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/kelsey-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/kelsey-headshot-lg.jpg"
 			},
 			"order": "text-content-7"
 		},
 		{
 			"name": "Kevin Nguyen",
 			"img": {
-				"sm": "/assets/images/headshots/kevin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/kevin-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/kevin-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/kevin-headshot-lg.jpg"
 			},
 			"order": "text-content-8"
 		},
 		{
 			"name": "Logan Wong",
 			"img": {
-				"sm": "/assets/images/headshots/logan-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/logan-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/logan-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/logan-headshot-lg.jpg"
 			},
 			"order": "text-content-9"
 		},
 		{
 			"name": "Michelle Ha",
 			"img": {
-				"sm": "/assets/images/headshots/michelle-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/michelle-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/michelle-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/michelle-headshot-lg.jpg"
 			},
 			"order": "text-content-10"
 		},
 		{
 			"name": "Melissa Thai",
 			"img": {
-				"sm": "/assets/images/headshots/melissa-2015-sm.jpg",
-				"lg": "/assets/images/headshots/melissa-2015-lg.jpg"
+				"sm": "/assets/images/headshots/min/melissa-2015-sm.jpg",
+				"lg": "/assets/images/headshots/min/melissa-2015-lg.jpg"
 			},
 			"order": "text-content-11"
 		},
 		{
 			"name": "Metita Tuileata",
 			"img": {
-				"sm": "/assets/images/headshots/metita-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/metita-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/metita-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/metita-headshot-lg.jpg"
 			},
 			"order": "text-content-12"
 		},
 		{
 			"name": "Timothy Chau",
 			"img": {
-				"sm": "/assets/images/headshots/tim-chau-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/tim-chau-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/tim-chau-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/tim-chau-headshot-lg.jpg"
 			},
 			"order": "text-content-13"
 		},
 		{
 			"name": "Timothy Han",
 			"img": {
-				"sm": "/assets/images/headshots/tim-han-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/tim-han-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/tim-han-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/tim-han-headshot-lg.jpg"
 			},
 			"order": "text-content-14"
 		},
 		{
 			"name": "Victor Vo",
 			"img": {
-				"sm": "/assets/images/headshots/victor-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/victor-headshot-lg.jpg"
+				"sm": "/assets/images/headshots/min/victor-headshot-sm.jpg",
+				"lg": "/assets/images/headshots/min/victor-headshot-lg.jpg"
 			},
 			"order": "text-content-15"
 		}

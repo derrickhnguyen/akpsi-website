@@ -12,11 +12,18 @@ var imageminMozjpeg = require('imagemin-mozjpeg');
 imagemin(['public/images/banners/*.jpg'], 'public/images/banners/min/', {
   plugins: [imageminMozjpeg()]
 }).then(function(files) {
-  console.log("Image min successful!");
+  console.log("Banner compressions successful!");
+});
+
+imagemin(['public/images/headshots/*.jpg'], 'public/images/headshots/min/', {
+  plugins: [imageminMozjpeg()]
+}).then(function(files) {
+  console.log("Headshot compression successful!");
 });
 
 var routes = require('./routes/index');
 var app = express();
+app.locals.pretty = true;
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -44,7 +51,6 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.locals.pretty = true;
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
