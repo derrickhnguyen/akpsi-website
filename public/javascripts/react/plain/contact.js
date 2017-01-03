@@ -205,3 +205,4 @@ var Msg = React.createClass({
 });
 
 ReactDOM.render(React.createElement(App, null), document.getElementById('react-contact'));
+
