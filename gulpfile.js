@@ -6,10 +6,10 @@ var filesize = require('gulp-filesize');
 var cleanCSS = require('gulp-clean-css');
 var watch = require('gulp-watch');
 
-var js = ['./public/javascripts/*.js'];
+var js = ['./public/javascripts/lightbox.js', './public/javascripts/parallax.js'];
 var contactJs = ['./public/javascripts/react/plain/contact.js'];
 var recruitmentJs = ['./public/javascripts/react/plain/recruitment.js']
-var css = ['./public/stylesheets/*.css'];
+var css = ['./public/stylesheets/fonts.css', './public/stylesheets/lightbox.css'];
 
 gulp.task('concatJS', function() {
 	return gulp.src(js)

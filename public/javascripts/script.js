@@ -8,12 +8,12 @@ function brotherImgOnHover() {
 			'bottom': 50 + 'px',
 			'opacity': 0.0,
 			'cursor': 'pointer',
-			'padding-bottom': '2px',
+			'paddingBottom': '2px',
 			'color': 'white',
-			'text-shadow': '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+			'textShadow': '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
 		});
 
-		$($captionArray[i]).hover(function() {
+		$($captionArray[i]).on('hover', function() {
 			$(this).css('opacity', 1.0)
 		}, function() {
 			$(this).css('opacity', 0.0)
