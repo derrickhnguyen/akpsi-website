@@ -1,11 +1,11 @@
 {
 	"title": "CSULB AKPSI",
-	"parallaxUrl": "/assets/images/banners/min/akpsi-delta-omicron-chapter-csulb-home.jpg",
-	"imgWidth": "1920",
-	"imgHeight": "1080",
+	"parallaxUrl": "/assets/images/banners/min/akpsi-delta-omicron-chapter-csulb-winter-retreat-2017.jpg",
+	"imgWidth": "3648",
+	"imgHeight": "2432",
 	"backgroundPosition": "center",
 	"header": "ALPHA KAPPA PSI",
-	"subheader": "Shaping People, Shaping Business",
+	"subheader": "DELTA OMICRON",
 	"height": "100%",
 	"pathname": "/"
 }

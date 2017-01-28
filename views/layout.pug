@@ -17,7 +17,7 @@ html(lang='en')
 		noscript(style='color:red') 
 			div.container(class='text-center') **Probably should turn on JavaScript huh...
 
-		div.container-fluid(class='parallax-window home', data-parallax='scroll', data-image-src=parallaxUrl, data-position=backgroundPosition, data-natural-width=imgWidth, data-natural-height=imgHeight, style={'height':height})
+		div.container-fluid(class='parallax-window home darken', data-parallax='scroll', data-image-src=parallaxUrl, data-position=backgroundPosition, data-natural-width=imgWidth, data-natural-height=imgHeight, style={'height':height})
 			nav.navbar
 				div.container-fluid
 					div.navbar-header
@@ -48,7 +48,7 @@ html(lang='en')
 			div.title(class='text-center open-sans')
 				h1 
 					b #{header}
-					h2 #{subheader}
+				h2 #{subheader}
 
 			if pathname === '/'
 				div.container-fluid.social
@@ -64,28 +64,26 @@ html(lang='en')
 								li.twitter
 									a(href='https://twitter.com/csulbakpsi', target='_blank')
 										i.fa.fa-twitter-square.fa-lg
+				div.container-fluid.down-arrow
+					div.row
+						div.col-xs-12
+								p
+									a#scrollToMain(href='#about')
+										img.image-responsive(src='/assets/images/down-arrow.png')
 
 		block content
+		include ./includes/backtotop.pug
+		include ./includes/scripts.pug
+		include ./includes/footer.pug
 
-		if pathname === '/'
-			include ./includes/scripts.pug
-		else if pathname === '/contact'
-			include ./includes/footer.pug
-			include ./includes/scripts.pug
+		if pathname === '/contact'
 			script(src="https://npmcdn.com/react@15.3.0/dist/react.min.js")
 			script(src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js")
 			script(type='text/javascript' src='/assets/javascripts/react/min/contact.js')
 		else if pathname === '/recruitment'
-			include ./includes/backtotop.pug
-			include ./includes/footer.pug
-			include ./includes/scripts.pug		
 			script(src="https://npmcdn.com/react@15.3.0/dist/react.min.js")
 			script(src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.min.js")
 			script(type='text/javascript' src='/assets/javascripts/react/min/recruitment.js')
-		else
-			include ./includes/backtotop.pug
-			include ./includes/footer.pug
-			include ./includes/scripts.pug
 
 		script.
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -21,6 +21,12 @@ imagemin(['public/images/headshots/*.jpg'], 'public/images/headshots/min/', {
   console.log("Headshot compression successful!");
 });
 
+imagemin(['public/images/*.jpg'], 'public/images/min/', {
+  plugins: [imageminMozjpeg()]
+}).then(function(files) {
+  console.log("Misc. image compressions successful!");
+});
+
 var routes = require('./routes/index');
 var app = express();
 

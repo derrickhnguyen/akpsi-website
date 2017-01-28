@@ -21,7 +21,12 @@ padding: 0;
 
 .top-space-sm {
 position: relative;
-margin-top:25px;
+margin-top: 25px;
+}
+
+.top-space-pd-sm {
+position: relative;
+padding-top: 25px;
 }
 
 .top-space {  
@@ -29,15 +34,30 @@ position: relative;
 margin-top: 50px;
 }
 
+.top-space-pd {
+position: relative;
+padding-top: 50px;
+}
+
 .bottom-space-sm {
 position: relative;
 margin-bottom: 25px;
 }
 
+.bottom-space-pd-sm {
+position: relative;
+padding-bottom: 25px;
+}
+
 .bottom-space {
 position: relative;  
 margin-bottom: 50px;      
-}                             
+}     
+
+.bottom-space-pd {
+position: relative;
+padding-bottom: 50px;
+}                        
 
 .top-bot-space-sm {
 position: relative;
@@ -45,10 +65,32 @@ margin-top: 25px;
 margin-bottom: 25px;
 }
 
+.top-bot-space-pd-sm {
+position: relative;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
 .top-bot-space {
 position: relative;       
 margin-top: 50px;
 margin-bottom: 50px;
+}
+
+.top-bot-space-pd {
+position: relative;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.col-pd {
+padding-left: 150px;
+padding-right: 150px;
+}
+
+.col-pd-lg {
+padding-left: 300px;
+padding-right: 300px;
 }
 
 .newsletter-email {
@@ -58,6 +100,11 @@ margin: 0 auto;
 
 .biographies {
 margin-top: 55px;
+}
+
+.blue-background {
+background: #193366;
+width: 100%;
 }
 
 
@@ -113,6 +160,10 @@ color: #f1c40f;
 
 .silver {
 color: #bdc3c7;
+}
+
+.white {
+color: #fff;
 }
 
 .raleway {
@@ -211,7 +262,7 @@ transform: translate(-50%, -50%);
 
 div.container-fluid.social {
 position: absolute;
-top: 90%;
+top: 88%;
 left: 50%;
 -ms-transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);
@@ -223,6 +274,27 @@ transform: translate(-50%, -50%);
 div.container-fluid.social ul.social li {
 padding-left: 20px;
 }
+
+div.container-fluid.down-arrow {
+position: absolute;
+top: 95%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+div.container-fluid.down-arrow img {
+width: 40px;
+height: 30px;
+}
+
+div.container-fluid.down-arrow img:hover {
+opacity: 0.6;
+}
+
 
 /*------------------------------------------------------------------------------
 ------------------------------ IMAGES & MEDIA ----------------------------------
@@ -255,6 +327,24 @@ a.img-responsive:active {
 text-decoration: none;
 }
 
+.small-picture {
+height: 100px;
+width: 100px;
+}
+
+.darken {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4));
+}
+
+.icon {
+height: 100px;
+width: 100px;
+}
+
+#crest {
+height: 429px;
+width: 250px;
+}
 
 
 /*------------------------------------------------------------------------------
@@ -296,8 +386,7 @@ opacity: 0.8;
 opacity: 0.6; 
 cursor: pointer;
 }
-/*
-#footer { background-color: #bdc3c7; }*/
+
 
 
 /*------------------------------------------------------------------------------
