@@ -68,7 +68,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
@@ -466,9 +466,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   });
 })(jQuery, window, document);
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
@@ -543,6 +543,9 @@ function setup() {
 
 		if (window.location.pathname === '/') {
 			$('.title h1').css('font-size', '72px');
+			$('.parallax-window').addClass('darken');
+		} else if (window.location.pathname === '/brothers') {
+			$('.parallax-window').addClass('darken');
 		}
 	} else {
 		navLink.css('border-bottom', 'initial');
@@ -566,5 +569,5 @@ $(function () {
 	scrollToAboutSection();
 });
 
-/***/ }
+/***/ })
 /******/ ]);

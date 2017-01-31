@@ -15,8 +15,8 @@ html,
 body { 
 height: 100%;
 width: 100%;
-margin: 0;
-padding: 0;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
 }
 
 .top-space-sm {
@@ -91,6 +91,15 @@ padding-right: 150px;
 .col-pd-lg {
 padding-left: 300px;
 padding-right: 300px;
+}
+
+.center {
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
 }
 
 .newsletter-email {

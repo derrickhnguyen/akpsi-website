@@ -68,6 +68,9 @@ function setup() {
 
 		if (window.location.pathname === '/') {
 			$('.title h1').css('font-size', '72px');
+			$('.parallax-window').addClass('darken');
+		} else if(window.location.pathname === '/brothers') {
+			$('.parallax-window').addClass('darken');
 		}
 	} else{
 		navLink.css('border-bottom', 'initial');

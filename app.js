@@ -15,7 +15,7 @@ imagemin(['public/images/banners/*.jpg'], 'public/images/banners/min/', {
   console.log("Banner compressions successful!");
 });
 
-imagemin(['public/images/headshots/*.jpg'], 'public/images/headshots/min/', {
+imagemin(['public/images/headshots/new/*.JPG'], 'public/images/headshots/min/', {
   plugins: [imageminMozjpeg()]
 }).then(function(files) {
   console.log("Headshot compression successful!");

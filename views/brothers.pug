@@ -3,27 +3,20 @@ extends layout
 block content
 	div.container(class='top-bot-space text-center')
 		div.row(class='top-space-sm')
-			- for (var x = 0; x < activeBrothers.length; x++)
+			- for (var x = 0; x < executiveBoard.length; x++)
 				if ((x % 4) === 0)
 					div.col-xs-6.col-sm-3.col-lg-2.col-lg-offset-2
 						div
-							//- a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
-							img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
-							span(class=activeBrothers[x].order) #{activeBrothers[x].name}
+							img.img-responsive.headshot(src=executiveBoard[x].img, alt=executiveBoard[x].name)
+							spam #{executiveBoard[x].name}
+							br
+							spam #{executiveBoard[x].position}
 				else 
 					div.col-xs-6.col-sm-3.col-lg-2
 						div
-							//- a.img-responsive(href=activeBrothers[x].img.lg, data-lightbox='groupies', data-title=activeBrothers[x].name)
-							img.img-responsive.headshot(src=activeBrothers[x].img.sm, alt=activeBrothers[x].name)
-							span(class=activeBrothers[x].order) #{activeBrothers[x].name}
+							img.img-responsive.headshot(src=executiveBoard[x].img, alt=executiveBoard[x].name)
+							span #{executiveBoard[x].name}
+							br
+							spam #{executiveBoard[x].position}
 
-		div.row.top-space-sm
-			div.col-xs-12.col-md-6.col-md-offset-3
-				p 
-					b Not pictured:
-					- for (var x = 0; x < notPictured.length; x++)
-						if x === notPictured.length - 1
-							|  #{notPictured[x].name}
-						else
-							|  #{notPictured[x].name},
 

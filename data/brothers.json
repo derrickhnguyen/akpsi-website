@@ -1,144 +1,146 @@
 {
 	"title": "Active Brothers | CSULB AKPSI",
-	"parallaxUrl": "/assets/images/banners/min/akpsi-delta-omicron-chapter-csulb-brothers.jpg",
-	"imgWidth": "1920",
-	"imgHeight": "700",
+	"parallaxUrl": "/assets/images/banners/min/akpsi-delta-omicron-chapter-csulb-chapter-hike.JPG",
+	"imgWidth": "2359",
+	"imgHeight": "1324",
 	"backgroundPosition": "top",
 	"header": "MEET THE BROTHERS",
 	"subheader": "",
 	"height": "60%",
 	"pathname": "/brothers",
-	"activeBrothers": [
+	"executiveBoard": [
 		{
-			"name": "Austin Yao",
-			"img": {
-				"sm": "/assets/images/headshots/min/austin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/austin-headshot-lg.jpg"
-			},
-			"order": "text-content-1"
-		},
-		{
-			"name": "Branden Saito",
-			"img": {
-				"sm": "/assets/images/headshots/min/branden-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/branden-headshot-lg.jpg"
-			},
-			"order": "text-content-2"
+			"name": "Logan Wong",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-logan-wong.JPG",
+			"position": "Vice President of Administration"
 		},
 		{
 			"name": "Darrin Nguyen",
-			"img": {
-				"sm": "/assets/images/headshots/min/darrin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/darrin-headshot-lg.jpg"
-			},
-			"order": "text-content-3"
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-darrin-nguyen.JPG",
+			"position": "Vice President of Membership"
 		},
 		{
-			"name": "Denny Co",
-			"img": {
-				"sm": "/assets/images/headshots/min/denny-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/denny-headshot-lg.jpg"
-			},
-			"order": "text-content-4"
-		},
-		{
-			"name": "Derrick Nguyen",
-			"img": {
-				"sm": "/assets/images/headshots/min/derrick-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/derrick-headshot-lg.jpg"
-			},
-			"order": "text-content-5"
-		},
-		{
-			"name": "Eileen Tran",
-			"img": {
-				"sm": "/assets/images/headshots/min/eileen-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/eileen-headshot-lg.jpg"
-			},
-			"order": "text-content-6"
-		},
-		{
-			"name": "Kelsey Yonemura",
-			"img": {
-				"sm": "/assets/images/headshots/min/kelsey-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/kelsey-headshot-lg.jpg"
-			},
-			"order": "text-content-7"
-		},
-		{
-			"name": "Kevin Nguyen",
-			"img": {
-				"sm": "/assets/images/headshots/min/kevin-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/kevin-headshot-lg.jpg"
-			},
-			"order": "text-content-8"
-		},
-		{
-			"name": "Logan Wong",
-			"img": {
-				"sm": "/assets/images/headshots/min/logan-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/logan-headshot-lg.jpg"
-			},
-			"order": "text-content-9"
+			"name": "Austin Yao",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-austin-yao.JPG",
+			"position": "Vice President of Finance"
 		},
 		{
 			"name": "Michelle Ha",
-			"img": {
-				"sm": "/assets/images/headshots/min/michelle-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/michelle-headshot-lg.jpg"
-			},
-			"order": "text-content-10"
-		},
-		{
-			"name": "Melissa Thai",
-			"img": {
-				"sm": "/assets/images/headshots/min/melissa-2015-sm.jpg",
-				"lg": "/assets/images/headshots/min/melissa-2015-lg.jpg"
-			},
-			"order": "text-content-11"
-		},
-		{
-			"name": "Metita Tuileata",
-			"img": {
-				"sm": "/assets/images/headshots/min/metita-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/metita-headshot-lg.jpg"
-			},
-			"order": "text-content-12"
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-michelle-ha.JPG",
+			"position": "Vice President of Marketing"
 		},
 		{
 			"name": "Timothy Chau",
-			"img": {
-				"sm": "/assets/images/headshots/min/tim-chau-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/tim-chau-headshot-lg.jpg"
-			},
-			"order": "text-content-13"
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-timothy-chau.JPG",
+			"position": "Vice President of Alumni Relations"
 		},
 		{
-			"name": "Timothy Han",
-			"img": {
-				"sm": "/assets/images/headshots/min/tim-han-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/tim-han-headshot-lg.jpg"
-			},
-			"order": "text-content-14"
+			"name": "Sy Pham",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-sy-pham.JPG",
+			"position": "Secretary"
+		},
+		{
+			"name": "Eric Koshimizu",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-eric-koshimizu.JPG",
+			"position": "Historian"
+		},
+		{
+			"name": "Derrick Nguyen",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-derrick-nguyen.JPG",
+			"position": "Warden"
+		},
+		{
+			"name": "Tejas Zaveri",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-tejas-zaveri.JPG",
+			"position": "Master of Rituals"
+		}
+	],
+	"directors": [
+		{
+			"name": "Siddhant Gupta",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-siddhant-gupta.JPG",
+			"position": "Director of Fundraising"
+		},
+		{
+			"name": "Khiem Huynh",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-khiem-huynh.JPG",
+			"position": "Director of Brotherhood"
+		},
+		{
+			"name": "Jordan Alejo",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-jordan-alejo.JPG",
+			"position": "Director of Philanthropy"
+		}
+	],
+	"chairs": [
+		{
+			"name": "Timothy Chau",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-timothy-chau.JPG",
+			"position": "Co-Inter-Chapter Chair"
+		},
+		{
+			"name": "Denny Co",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-denny-co.JPG",
+			"position": "Co-Inter-Chapter-Chair"
+		},
+		{
+			"name": "Derrick Nguyen",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-derrick-nguyen.JPG",
+			"position": "Information Technology Chair"
+		},
+		{
+			"name": "Jash Gajora",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-jash-gajora.JPG",
+			"position": "Audit Chair"
+		},
+		{
+			"name": "Carissa Lee",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-carissa-lee.JPG",
+			"position": "Banquet Chair"
+		},
+		{
+			"name": "Sy Pham",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-sy-pham.JPG",
+			"position": "Retreat Chair"
+		},
+		{
+			"name": "Logan Wong",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-logan-wong.JPG",
+			"position": "Convention Chair"
+		}
+	],
+	"activeBrothers": [
+		{
+			"name": "Chelsea Desmond",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-chelsea-desmond.JPG"
+		},
+		{
+			"name": "Eileen Tran",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-eileen-tran.JPG"
+		},
+		{
+			"name": "Kelsey Yonemura",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-kelsey-yonemura.JPG"
+		},
+		{
+			"name": "Krina Mehta",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-krina-mehta.JPG"
+		},
+		{
+			"name": "Mannan Adlakha",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-mannan-adlakha.JPG"
 		},
 		{
 			"name": "Victor Vo",
-			"img": {
-				"sm": "/assets/images/headshots/min/victor-headshot-sm.jpg",
-				"lg": "/assets/images/headshots/min/victor-headshot-lg.jpg"
-			},
-			"order": "text-content-15"
-		}
-	],
-	"notPictured": [
-		{
-			"name": "Alain Lopez"
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-victor-vo.JPG"
 		},
 		{
-			"name": "Andrew Chu"
+			"name": "Vu Nguyen",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-vu-nguyen.JPG"
 		},
 		{
-			"name": "Shaina Williams"
+			"name": "Vyann Bui",
+			"img": "/assets/images/headshots/min/akpsi-delta-omicron-chapter-csulb-vyann-bui.JPG"
 		}
 	],
 	"pathname": "/brothers"
